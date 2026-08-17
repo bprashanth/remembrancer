@@ -1,0 +1,27 @@
+24 prod runs
+[claude-4.6-opus-high] R3: 28s len=1089
+[claude-4.6-opus-high] R5: 21s len=1062
+[claude-4.6-opus-high] H1: 22s len=1414
+[claude-4.6-opus-high] H5: 53s len=1913
+[claude-4.6-opus-high] N1: 26s len=1870
+[claude-4.6-opus-high] U3: 19s len=741
+[gpt-5.4-medium] R3: 23s len=315
+[gpt-5.4-medium] R5: 46s len=532
+[gpt-5.4-medium] H1: 503s len=1674
+[gpt-5.4-medium] H5: 84s len=1898
+[gpt-5.4-medium] N1: 223s len=1286
+[gpt-5.4-medium] U3: 35s len=810
+[cursor-grok-4.5-medium] R3: 26s len=528
+[cursor-grok-4.5-medium] R5: 28s len=703
+[cursor-grok-4.5-medium] H1: 65s len=732
+[cursor-grok-4.5-medium] H5: 62s len=1230
+[cursor-grok-4.5-medium] N1: 95s len=2339
+[cursor-grok-4.5-medium] U3: 25s len=1006
+[gemini-3.5-flash] R3: 41s len=2171
+[gemini-3.5-flash] R5: 56s len=2180
+[gemini-3.5-flash] H1: 200s len=3791
+[gemini-3.5-flash] H5: 97s len=2717
+[gemini-3.5-flash] N1: no source run
+[gemini-3.5-flash] U3: no source run
+WHY4-DONE
+EXIT=0

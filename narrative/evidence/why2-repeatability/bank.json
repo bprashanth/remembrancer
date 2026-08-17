@@ -1,0 +1,48 @@
+{
+ "version": "why2-pilot",
+ "note": "repeatability: 3 reps/model, fresh dir per run; score = do repeats agree on number AND basis; do answers name their basis",
+ "questions": [
+  {
+   "id": "R1",
+   "q": "In 2020, how many road related complaints came from Hoodi ward in Bengaluru? Citation also.",
+   "known_bases": {
+    "ICMC/Janaagraha": "25 (14-25 by category)",
+    "BBMP Sahaaya": "332"
+   }
+  },
+  {
+   "id": "R2",
+   "q": "Between 2019 and 2022, which ward in Bengaluru had the most garbage complaints? What is the count? Citations please.",
+   "known_bases": {
+    "ICMC": "Horamavu 100",
+    "BBMP 2020-25 file": "Rajarajeshwari Nagar 2,642"
+   }
+  },
+  {
+   "id": "R3",
+   "q": "What was India's unemployment rate in 2021? Give the number with citation.",
+   "known_bases": {
+    "ILO modelled/WB": "6.38%",
+    "PLFS": "~4.2%",
+    "CMIE": "~7-8%"
+   }
+  },
+  {
+   "id": "R4",
+   "q": "Garbage complaints in Bellandur ward, Bengaluru: from 2019 to 2022 did they go up or come down? Citations.",
+   "known_bases": {
+    "ICMC": "down 26->3",
+    "BBMP 2020->2022": "up +24%"
+   }
+  },
+  {
+   "id": "R5",
+   "q": "What is the population of Erode? Give citation.",
+   "known_bases": {
+    "city (2011)": "~173,000",
+    "urban agglomeration": "~521,000",
+    "district": "2,251,744"
+   }
+  }
+ ]
+}

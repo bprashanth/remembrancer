@@ -1,0 +1,951 @@
+{
+ "expressible": [
+  {
+   "qid": "R1",
+   "q": "In 2020, how many road related complaints came from Hoodi ward in Bengaluru?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "road related complaints",
+       "region": {
+        "op": "REGION",
+        "place": "Hoodi ward, Bengaluru"
+       },
+       "time": {
+        "start": "2020",
+        "end": "2020"
+       }
+      }
+     },
+     "latency_s": 7.9,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 25,
+       "note": "count=25",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "road complaints",
+        "note": "25 road complaints, ward Hoodi, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=25"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "road related complaints",
+       "region": {
+        "op": "REGION",
+        "place": "Hoodi ward, Bengaluru"
+       },
+       "time": {
+        "start": "2020",
+        "end": "2020"
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 25,
+       "note": "count=25",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "road complaints",
+        "note": "25 road complaints, ward Hoodi, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=25"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "road related complaints",
+       "region": {
+        "op": "REGION",
+        "place": "Hoodi ward, Bengaluru"
+       },
+       "time": {
+        "start": "2020",
+        "end": "2020"
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 25,
+       "note": "count=25",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "road complaints",
+        "note": "25 road complaints, ward Hoodi, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=25"
+       }
+      ]
+     }
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "R3",
+   "q": "What was India's unemployment rate in 2021?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "unemployment rate",
+      "region": {
+       "op": "REGION",
+       "place": "India"
+      },
+      "time": {
+       "start": "2021",
+       "end": "2021"
+      }
+     },
+     "latency_s": 4.8,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "series",
+       "rows": [
+        {
+         "t": "2021",
+         "value": 6.38
+        }
+       ],
+       "label": "modelled",
+       "source": "worldbank",
+       "ambiguous": []
+      },
+      "label": "modelled",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "worldbank",
+        "resolved": "unemployment",
+        "ambiguous": [],
+        "note": "1 yearly points of unemployment for IND (upstream ILO/WB modeled estimate)"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "unemployment rate",
+      "region": {
+       "op": "REGION",
+       "place": "India"
+      },
+      "time": {
+       "start": "2021",
+       "end": "2021"
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "series",
+       "rows": [
+        {
+         "t": "2021",
+         "value": 6.38
+        }
+       ],
+       "label": "modelled",
+       "source": "worldbank",
+       "ambiguous": []
+      },
+      "label": "modelled",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "worldbank",
+        "resolved": "unemployment",
+        "ambiguous": [],
+        "note": "1 yearly points of unemployment for IND (upstream ILO/WB modeled estimate)"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "unemployment rate",
+      "region": {
+       "op": "REGION",
+       "place": "India"
+      },
+      "time": {
+       "start": "2021",
+       "end": "2021"
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "series",
+       "rows": [
+        {
+         "t": "2021",
+         "value": 6.38
+        }
+       ],
+       "label": "modelled",
+       "source": "worldbank",
+       "ambiguous": []
+      },
+      "label": "modelled",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "worldbank",
+        "resolved": "unemployment",
+        "ambiguous": [],
+        "note": "1 yearly points of unemployment for IND (upstream ILO/WB modeled estimate)"
+       }
+      ]
+     }
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "R4",
+   "q": "Garbage complaints in Bellandur ward, Bengaluru: from 2019 to 2022 did they go up or come down?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "COMPARE",
+      "how": "trend_direction",
+      "left": {
+       "op": "AGGREGATE",
+       "by": "time",
+       "metric": "count",
+       "source": {
+        "op": "SELECT",
+        "entity": "garbage complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bellandur ward, Bengaluru"
+        },
+        "time": {
+         "start": "2019",
+         "end": "2022"
+        }
+       }
+      }
+     },
+     "latency_s": 9.1,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": "falling",
+       "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "garbage complaints",
+        "note": "90 garbage complaints, ward Bellanduru, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "time",
+        "metric": "count",
+        "note": "binned to 4 years"
+       },
+       {
+        "op": "COMPARE",
+        "how": "trend_direction",
+        "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "COMPARE",
+      "how": "trend_direction",
+      "left": {
+       "op": "AGGREGATE",
+       "by": "time",
+       "metric": "count",
+       "source": {
+        "op": "SELECT",
+        "entity": "garbage complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bellandur ward, Bengaluru"
+        },
+        "time": {
+         "start": "2019",
+         "end": "2022"
+        }
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": "falling",
+       "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "garbage complaints",
+        "note": "90 garbage complaints, ward Bellanduru, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "time",
+        "metric": "count",
+        "note": "binned to 4 years"
+       },
+       {
+        "op": "COMPARE",
+        "how": "trend_direction",
+        "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "COMPARE",
+      "how": "trend_direction",
+      "left": {
+       "op": "AGGREGATE",
+       "by": "time",
+       "metric": "count",
+       "source": {
+        "op": "SELECT",
+        "entity": "garbage complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bellandur ward, Bengaluru"
+        },
+        "time": {
+         "start": "2019",
+         "end": "2022"
+        }
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": "falling",
+       "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "garbage complaints",
+        "note": "90 garbage complaints, ward Bellanduru, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "time",
+        "metric": "count",
+        "note": "binned to 4 years"
+       },
+       {
+        "op": "COMPARE",
+        "how": "trend_direction",
+        "note": "falling (slope=-17.4, -94.5% over 4 pts 2019\u21922022)"
+       }
+      ]
+     }
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "G4",
+   "q": "How many complaints in the Bengaluru data were logged within about 1 km of Bellandur lake?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bellandur lake complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       }
+      }
+     },
+     "latency_s": 11.4,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 2708,
+       "note": "count=2708",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "complaints (all categories)",
+        "note": "16071 complaints (all categories), all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "lake complaints",
+        "note": "54 lake complaints, all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "RELATE",
+        "relation": "within",
+        "threshold_km": null,
+        "note": "16071 x 54 -> 2708"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=2708"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bellandur lake complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 2708,
+       "note": "count=2708",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "complaints (all categories)",
+        "note": "16071 complaints (all categories), all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "lake complaints",
+        "note": "54 lake complaints, all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "RELATE",
+        "relation": "within",
+        "threshold_km": null,
+        "note": "16071 x 54 -> 2708"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=2708"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bellandur lake complaints",
+        "region": {
+         "op": "REGION",
+         "place": "Bengaluru, India"
+        },
+        "time": null
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "answer",
+      "value": {
+       "kind": "scalar",
+       "value": 2708,
+       "note": "count=2708",
+       "label": "observed"
+      },
+      "label": "observed",
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "complaints (all categories)",
+        "note": "16071 complaints (all categories), all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "SELECT",
+        "route": "ichangemycity",
+        "resolved": "lake complaints",
+        "note": "54 lake complaints, all Bengaluru wards, Bengaluru complaints log 2019-2022"
+       },
+       {
+        "op": "RELATE",
+        "relation": "within",
+        "threshold_km": null,
+        "note": "16071 x 54 -> 2708"
+       },
+       {
+        "op": "AGGREGATE",
+        "by": "space",
+        "metric": "count",
+        "note": "count=2708"
+       }
+      ]
+     }
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "N1",
+   "q": "In Erode side, the informal dyeing units are paying workers how much per day these days?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "?proxy",
+      "region": {
+       "op": "REGION",
+       "place": "Erode, India"
+      },
+      "time": null
+     },
+     "latency_s": 3.5,
+     "holes": true
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "?proxy",
+      "region": {
+       "op": "REGION",
+       "place": "Erode, India"
+      },
+      "time": null
+     },
+     "latency_s": 0.0,
+     "holes": true
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "SELECT",
+      "entity": "?proxy",
+      "region": {
+       "op": "REGION",
+       "place": "Erode, India"
+      },
+      "time": null
+     },
+     "latency_s": 0.0,
+     "holes": true
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "N3",
+   "q": "Last year how many young people left farming in Erode district?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "time",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "young people leaving farming",
+       "region": {
+        "op": "REGION",
+        "place": "Erode district"
+       },
+       "time": {
+        "start": "last year",
+        "end": "last year"
+       }
+      }
+     },
+     "latency_s": 14.2,
+     "holes": false,
+     "result": {
+      "status": "data_request",
+      "reason": "no_connector",
+      "detail": {
+       "entity": "young people leaving farming",
+       "hint": "no data source maps this entity; add a connector or refine the term"
+      },
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "none",
+        "note": "no connector for 'young people leaving farming'"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "time",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "young people leaving farming",
+       "region": {
+        "op": "REGION",
+        "place": "Erode district"
+       },
+       "time": {
+        "start": "last year",
+        "end": "last year"
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "data_request",
+      "reason": "no_connector",
+      "detail": {
+       "entity": "young people leaving farming",
+       "hint": "no data source maps this entity; add a connector or refine the term"
+      },
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "none",
+        "note": "no connector for 'young people leaving farming'"
+       }
+      ]
+     }
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "time",
+      "metric": "count",
+      "source": {
+       "op": "SELECT",
+       "entity": "young people leaving farming",
+       "region": {
+        "op": "REGION",
+        "place": "Erode district"
+       },
+       "time": {
+        "start": "last year",
+        "end": "last year"
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": false,
+     "result": {
+      "status": "data_request",
+      "reason": "no_connector",
+      "detail": {
+       "entity": "young people leaving farming",
+       "hint": "no data source maps this entity; add a connector or refine the term"
+      },
+      "provenance": [
+       {
+        "op": "SELECT",
+        "route": "none",
+        "note": "no connector for 'young people leaving farming'"
+       }
+      ]
+     }
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  },
+  {
+   "qid": "U1",
+   "q": "Near the bus stand, how many shops are there?",
+   "reps": [
+    {
+     "rep": 1,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "shop",
+        "region": "?place",
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bus stand",
+        "region": "?place",
+        "time": null
+       }
+      }
+     },
+     "latency_s": 8.4,
+     "holes": true
+    },
+    {
+     "rep": 2,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "shop",
+        "region": "?place",
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bus stand",
+        "region": "?place",
+        "time": null
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": true
+    },
+    {
+     "rep": 3,
+     "parse_valid": true,
+     "ir": {
+      "op": "AGGREGATE",
+      "by": "space",
+      "metric": "count",
+      "source": {
+       "op": "RELATE",
+       "relation": "within",
+       "left": {
+        "op": "SELECT",
+        "entity": "shop",
+        "region": "?place",
+        "time": null
+       },
+       "right": {
+        "op": "SELECT",
+        "entity": "bus stand",
+        "region": "?place",
+        "time": null
+       }
+      }
+     },
+     "latency_s": 0.0,
+     "holes": true
+    }
+   ],
+   "deterministic_ir": true,
+   "deterministic_result": true
+  }
+ ],
+ "not_expressible": {
+  "R2": "which ward had most garbage complaints (all wards) - needs partitioned GROUP; governance ALG-003, rfc-required",
+  "G1": "farthest-pair distance - needs spatial pairwise op; relates to ALG-010 (proposed)",
+  "G2": "densest 500m cluster - needs clustering op; ALG-010 (proposed)",
+  "G3": "spread vs concentrated (dispersion) - needs dispersion metric; ALG-010 (proposed)"
+ }
+}

@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Form data 2</title>
+<style>
+:root{--bg:#fff;--ink:#000;--ink2:#000;--muted:#000;--line:#000;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#fff;color:#000;font:17px/1.6 Arial,Helvetica,sans-serif}
+a{color:#000;text-underline-offset:3px}
+#content{max-width:800px;margin:0 auto;padding:58px 22px 80px}
+.entry{padding:30px 0}
+.entry + .entry{border-top:1px solid #000}
+.inner{margin:0;padding:0}
+.tag{font:11.5px/1.4 ui-monospace,Menlo,monospace;text-transform:uppercase;color:#000}
+h1,h2{line-height:1.16;text-wrap:balance}
+h1{font-size:clamp(32px,5vw,48px);margin:.35em 0 .45em}
+h2{font-size:clamp(25px,3.6vw,34px);margin:.35em 0 .55em}
+h3{font-size:16px;color:#000;margin:1.3em 0 .3em}
+p{max-width:66ch}
+.lead{font-size:19px;color:var(--ink2)}
+.small{font-size:13px;color:var(--muted)}
+ul,ol{max-width:67ch;padding-left:1.3em}
+li{margin:.58em 0;color:var(--ink2)}
+li b{color:var(--ink)}
+.note{margin:20px 0;padding:13px 16px;background:#fff;border:1px solid #000;color:#000}
+pre{font:13.5px/1.65 ui-monospace,Menlo,monospace;white-space:pre-wrap;background:#fff;border:1px solid #000;padding:14px 16px;overflow-x:auto}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:7px 13px 7px 0;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+td.num{font-family:ui-monospace,Menlo,monospace;white-space:nowrap}
+.home{position:fixed;top:12px;left:14px;z-index:8;color:#000;font:12px/1.3 ui-monospace,Menlo,monospace;padding:7px 9px;background:#fff}
+@media(max-width:640px){body{font-size:15.5px}#content{padding:50px 17px 60px}.entry{padding:24px 0}.lead{font-size:17px}.home{left:7px;top:6px}pre{font-size:11.5px}table{font-size:12.5px}}
+</style>
+</head>
+<body>
+<a class="home" href="../">Index</a>
+
+<main id="content">
+  <section class="entry"><div class="inner">
+    <div class="tag">form data 2</div>
+    <h1>From a paper form back to useful data</h1>
+    <p class="lead">This is the longer account of the paperroast work: what real forms look like, why reading them is difficult, what we tried, and where the system finally landed.</p>
+    <p>The main idea is to stop treating every filled form as a new visual puzzle. If we can design or regenerate the blank form once, we already know its rows, columns, choices and geometry. The model then gets a much smaller job.</p>
+    <p class="small">Source: <a href="../evidence/paperroast/">code, benchmark data and results</a></p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">1 - the form landscape</div>
+    <h2>We started with forms we did not make</h2>
+    <p class="lead">A benchmark made only from our own forms would tell us very little. So we looked for real XLSForms published by ODK, Kobo, SurveyCTO, Survey123 and field organisations.</p>
+    <p>We collected 41 files from ten public sources: official templates, parser test forms, household rosters, UNHCR-adjacent tools, academic reporting forms and a Kerala municipal health survey.</p>
+    <div class="note">There is one important limitation. Forms visible on GitHub are mostly templates and examples. Actual NGO production forms are usually private. So this collection shows a minimum level of diversity, not the full range.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">the census</div>
+    <h2>What shape do these surveys have?</h2>
+    <p>Twelve files were exports or broken fixtures. Among the 29 genuine survey definitions:</p>
+    <div class="table-wrap"><table>
+      <tr><th>shape</th><th>share</th><th>what it means</th></tr>
+      <tr><td><b>Register</b></td><td class="num">41%</td><td>One repeating table. Works today.</td></tr>
+      <tr><td><b>Card</b></td><td class="num">21%</td><td>One respondent per page. Needs one new layout.</td></tr>
+      <tr><td><b>Multi-region</b></td><td class="num">17%</td><td>A few separate tables. Needs another layout.</td></tr>
+      <tr><td><b>Not flattenable</b></td><td class="num">21%</td><td>Needs linked sheets, changing choices or digital capture.</td></tr>
+    </table></div>
+    <div class="note"><b>41% works today.</b> Around 79% is reachable after adding card and multi-region layouts. Those two are engineering work, not new research.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">the difficult 21%</div>
+    <h2>Why do some digital forms resist paper?</h2>
+    <ol>
+      <li><b>Changing choice lists:</b> choosing a district changes the blocks, and choosing a block changes the villages. A printed page cannot change its legend midway.</li>
+      <li><b>Repeats inside repeats:</b> household -> member -> illness episode cannot fit cleanly in one flat table.</li>
+      <li><b>Mostly digital questions:</b> photos, GPS and calculations are not really paper problems.</li>
+    </ol>
+    <p>As an anti-overfitting check, all 12 register forms went through import, rendering, synthetic filling and extraction. Across 24 runs there were no pipeline failures. Auto-accepted forms reached <b>0.971 cell accuracy</b> with zero hallucination; long unfamiliar text correctly went for review.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">2 - making the form</div>
+    <h2>Three starting points, one template</h2>
+    <p class="lead">The system accepts three ways of creating a form:</p>
+    <ul>
+      <li>Design it by hand in a builder.</li>
+      <li>Upload a photo of an existing form and let a vision model suggest the design.</li>
+      <li>Import the organisation's existing Kobo, ODK or SurveyCTO definition.</li>
+    </ul>
+    <p>All three paths end in the same template description: title, header fields, columns, value types, allowed choices, row count and the exact position of every cell.</p>
+    <div class="note">Printing, extraction, scoring and review all use this one description. There is no second source of truth to slowly go out of sync.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">hand design or photo</div>
+    <h2>Use a person where judgement is needed</h2>
+    <h3>Design by hand</h3>
+    <p>The builder supports serial numbers, integers, decimals, dates, yes/no, choices, names and text. It checks whether rows fit, keeps columns wide enough to write in, and prints choice legends directly on the page.</p>
+    <h3>Start from an old paper form</h3>
+    <p>A vision model reads one photo and proposes the same template structure. A person reviews it before the form is accepted. A local Qwen3-VL-8B was already good enough for this; Gemini 2.5 Flash was slightly cleaner online.</p>
+    <p class="small">This is a one-time design task, so using a larger model here is reasonable.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">importing an XLSForm</div>
+    <h2>The digital form can become paper without a model</h2>
+    <pre>form title             -> printed title
+top-level questions    -> header fields
+repeat group           -> table
+questions in repeat    -> columns
+select-one choices     -> value domain + printed legend
+repeat count           -> number of rows</pre>
+    <p>Long choices can become short codes when the initials are clear: male, female and other become M, F and O. The full meaning is printed in the legend.</p>
+    <p>A public SurveyCTO household roster completed import -> render -> hand-fill -> extraction at <b>0.967 accuracy</b> with zero hallucination.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">what printing adds</div>
+    <h2>Put detection help on the paper</h2>
+    <ul>
+      <li><b>QR form ID:</b> tells us exactly which template to load.</li>
+      <li><b>Small marks beside every row:</b> tell us where each row starts and ends even when the page bends.</li>
+      <li><b>Column ticks:</b> preserve the horizontal cell positions.</li>
+      <li><b>Printed choices and notation:</b> explain that a dot means zero, a tick means yes, and a blank means no entry.</li>
+    </ul>
+    <p>The same known geometry also produces synthetic training forms with exact answers: real hand-print glyphs, pencil, sparse and dense filling, corrections, scribbles, shadows, perspective and page bow.</p>
+    <div class="note">One blank template can produce unlimited training and test examples without manual labelling.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">3 - why detection is hard</div>
+    <h2>Layout is part of the answer</h2>
+    <p class="lead">A spreadsheet is useful only when every value stays in the correct row and column, including blanks.</p>
+    <p>One early output read most values correctly but flattened headers, dropped column names and produced rows of different lengths. A token-based score gave it 0.85. A person could not use it.</p>
+    <pre>token score:      “the right words exist somewhere”
+cell score:       “the right value is at row 4, column 3”</pre>
+    <p>A common OCR cleanup rule also removed one-letter tokens. That silently ignored 59-70% of forms where the actual data was codes like M, F, Y and N.</p>
+    <div class="note">The positional cell metric had to be built first. Otherwise every later experiment would optimise the wrong thing.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">geometry</div>
+    <h2>A phone photo is not a flat scan</h2>
+    <p>A register page can curve, especially near the binding. One global correction may align the top but leave the bottom rows many pixels away from their true positions.</p>
+    <p>The dangerous failure is not a slightly bad crop. It is choosing the neighbouring row. Once that happens, every answer can look clean while sitting one row above or below its real place.</p>
+    <p>The printed marks solve this by giving both the left and right edge of every row. Each row band is straightened separately, and the sequence is tracked so the system cannot casually jump to a neighbour.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">ink and meaning</div>
+    <h2>Handwriting is not only transcription</h2>
+    <ul>
+      <li><b>Real ink:</b> hand-print is harder than handwriting fonts; light pencil and cursive are harder again.</li>
+      <li><b>Local words:</b> a model may “correct” an unfamiliar village or crop into a familiar word.</li>
+      <li><b>Single-letter codes:</b> N/M/W or L/C/E can look alike. Knowing the allowed choices improves accuracy.</li>
+      <li><b>Long amounts:</b> one wrong digit can still look valid. Reading the cell twice helps catch disagreement.</li>
+    </ul>
+    <p>A dot may mean zero, tally marks must be counted, a tick may mean yes, and a struck value may mean empty or replaced. OCR can faithfully copy the mark and still produce the wrong meaning.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">honest refusal</div>
+    <h2>Bad photos should fail clearly</h2>
+    <p class="lead">A believable but wrong spreadsheet is more harmful than no spreadsheet.</p>
+    <pre>detected -> the geometry and ink checks pass -> extract
+review   -> show only doubtful cells          -> person checks
+reject   -> photo or anchors fail             -> ask for retake</pre>
+    <p>This decision should happen before calling the model. Review should show the original handwriting beside an editable value, not ask somebody to reread the entire sheet.</p>
+    <div class="note">The system must know when the document is outside its measured limits.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">blind-side dead ends - 1</div>
+    <h2>Clever visual shortcuts did not hold up</h2>
+    <ul>
+      <li><b>Template fingerprinting:</b> hand-made geometry produced zero true matches. DINOv2 improved, but false matches were still too risky. Printing an ID is safer.</li>
+      <li><b>Tesseract as a stable print detector:</b> worked on a clean image but coverage changed badly across photos of the same form.</li>
+      <li><b>Removing the printed layer:</b> reduced F1 from 0.681 to 0.567 because handwriting overlaps rules and labels. It also removed context the model used.</li>
+      <li><b>Trimming repetitive output:</b> cut valid code columns and serial-number sequences. One good form fell from 0.977 to 0.280.</li>
+    </ul>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">blind-side dead ends - 2</div>
+    <h2>Coverage and output cannot be left to the model</h2>
+    <p>A strong model with a crop tool read three parts of page one perfectly and then stopped. It ignored pages two and three. Recall was 0.276. Running the same loop one page at a time reached 0.976.</p>
+    <p>A tuned 2B model reached recall 0.86, higher than Gemini 2.5 Flash in that test, but kept inventing rows because it did not stop. On 17 forms it scored exactly zero despite reading more than half the content correctly.</p>
+    <div class="note">The harness must decide which pages, rows and cells to cover, and exactly how much output is allowed. The model should not decide when the document is finished.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">4 - models and solution</div>
+    <h2>There are two different jobs</h2>
+    <h3>Unknown form</h3>
+    <p>A legacy page arrives with no template, QR code or guide marks. A frontier model and careful crop harness must discover its structure.</p>
+    <h3>Known form</h3>
+    <p>The form was designed or regenerated by us. The template already gives every cell, position and allowed value. A small local model only reads bounded row or cell crops.</p>
+    <div class="note">Regenerating an organisation's form once converts every future submission from the difficult first job into the much smaller second job.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">what the model tests showed</div>
+    <h2>Structure mattered more than model size</h2>
+    <ul>
+      <li>With structure supplied, accuracy was 0.943 for a tuned 2B, 0.938 for an untrained 8B, 0.943 for a 32B and 0.952 for Gemini 2.5 Flash.</li>
+      <li>The 2B ran locally in about ten seconds per form.</li>
+      <li>The same model could score anywhere from 0.43 to 0.98 depending on how it was given crops and coverage.</li>
+      <li>Strong models used crop tools. Weak models ignored the tools and did better when the harness handed them fixed crops.</li>
+      <li>OCR specialists still struggled with notation because the task needs interpretation, not only reading.</li>
+    </ul>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">the working system</div>
+    <h2>The solution is a chain of small controls</h2>
+    <ol>
+      <li>Score values by row and column.</li>
+      <li>Identify the form using its QR code.</li>
+      <li>Find each row and column from printed guide marks.</li>
+      <li>Straighten one row band at a time.</li>
+      <li>Detect which cells actually contain ink.</li>
+      <li>Ask the model only for bounded rows or cells.</li>
+      <li>Read important numbers twice and flag disagreement.</li>
+      <li>Use printed choice lists and known local vocabularies.</li>
+      <li>Decide detected, review or reject from measured signals.</li>
+      <li>Show doubtful ink beside an editable spreadsheet cell.</li>
+    </ol>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">where it lands</div>
+    <h2>A small local model can compare the filled form to the blank</h2>
+    <p>The template supplies geometry and vocabulary. The guide marks preserve row positions under page bend. The model answers only small, clear questions. The verdict system refuses photographs it cannot trust.</p>
+    <div class="note">
+      <b>About 0.94</b> positional accuracy on auto-accepted forms<br>
+      <b>About 0.2%</b> hallucination<br>
+      <b>About 10 seconds</b> per form locally<br>
+      <b>No data egress</b> from the organisation
+    </div>
+    <p>This is not one clever model prompt. It is the result of making the document, geometry, model call and review screen agree on the same structure.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">unknown forms still matter</div>
+    <h2>The frontier path is useful, but price matters more than tiny score gaps</h2>
+    <p>On 24 real partner forms, the usable frontier models sat around 0.80-0.88 F1. At such small sample sizes, the top models were not meaningfully different in accuracy. Their cost and speed were very different.</p>
+    <div class="table-wrap"><table>
+      <tr><th>model</th><th>F1</th><th>cost / 100</th><th>seconds / form</th></tr>
+      <tr><td>Gemini 3.5 Flash</td><td class="num">0.875</td><td class="num">$4.87</td><td class="num">21</td></tr>
+      <tr><td>Codex CLI</td><td class="num">0.860</td><td>subscription</td><td class="num">596</td></tr>
+      <tr><td>Qwen 3.7 Flash</td><td class="num">0.804</td><td class="num">$0.41</td><td class="num">372</td></tr>
+      <tr><td>Gemini 2.5 Flash</td><td class="num">0.799</td><td class="num">$1.15</td><td class="num">29</td></tr>
+    </table></div>
+    <p class="small">Some top systems helped create the answer keys, so their scores are not completely clean.</p>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">training the small model</div>
+    <h2>The training data needed three things</h2>
+    <p>The LoRA training set had 774 synthetic forms: generated layouts plus fills of real downloaded templates.</p>
+    <ol>
+      <li><b>Realistic fill density.</b> Training only on full forms taught the model to invent extra rows. Sampling from very sparse to full forms improved unseen-layout accuracy from 0.351 to 0.575.</li>
+      <li><b>Real ink.</b> NIST hand-print glyphs were better than handwriting fonts. Pencil and cursive remain gaps.</li>
+      <li><b>Real form structures.</b> Training on layouts invented by us worked on familiar shapes and failed on unseen ones. Downloaded templates reduced this overfitting.</li>
+    </ol>
+    <div class="note">A trained 2B beat an untrained 8B. Specialisation helped more than scale.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">5 - coverage</div>
+    <h2>What works today, and what is next?</h2>
+    <p><b>Today:</b> a normal register with header fields and one table, 3-13 columns, numbers, dates, yes/no, choices, names and short text. Blanks, corrections, dots, ticks and margin scribbles are handled.</p>
+    <p><b>Next:</b></p>
+    <ul>
+      <li>Card layout for one respondent per page.</li>
+      <li>Multi-region layout for several separate tables.</li>
+      <li>One box per digit for amounts, dates and phone numbers.</li>
+      <li>Cross-field checks such as “if irrigated is no, water source should be blank”.</li>
+    </ul>
+    <div class="note">Card and multi-region layouts take the reachable share from 41% to around 79%.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">the hard cases</div>
+    <h2>Change the paper design before reaching for a bigger model</h2>
+    <ul>
+      <li><b>District -> block -> village:</b> print forms in batches for one area, or use a code sheet.</li>
+      <li><b>Repeats inside repeats:</b> use linked parent and child registers joined by an ID.</li>
+      <li><b>Multiple choices:</b> use Y/N columns for a few options or write short codes for many.</li>
+      <li><b>Signatures:</b> detect whether ink is present; do not try to read it.</li>
+      <li><b>Photos and GPS:</b> keep them digital and join them using the register serial number.</li>
+      <li><b>Long text and Indic handwriting:</b> send to review or treat as separate research.</li>
+    </ul>
+    <div class="note"><b>The final lesson:</b> put structure on the paper, keep the model's job small, and let a person see the doubtful cells.</div>
+  </div></section>
+</main>
+
+</body>
+</html>

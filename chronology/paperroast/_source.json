@@ -1,0 +1,42 @@
+{
+  "protocol_version": 1,
+  "source_id": "paperroast",
+  "repository": "https://github.com/bprashanth/paperroast",
+  "source_path": "chronology",
+  "source_revision": "7e3d7f4404d6bc9773219a674d7a517d57006ab5",
+  "imported_at": "2026-08-16T03:50:15+00:00",
+  "ordering": "lexical filename order",
+  "files": [
+    {
+      "name": "01-form-landscape.md",
+      "sha256": "70fe56678d16716eaab8fa4ae3e82d64355be86a31e4bcbfd84bcf09fbe29375",
+      "bytes": 4359
+    },
+    {
+      "name": "02-form-generation.md",
+      "sha256": "81d218cbb8837d5094d6864eda1661a4c01ccacd0228dba61899073e6122be69",
+      "bytes": 4405
+    },
+    {
+      "name": "03-detection-problems.md",
+      "sha256": "af50be02c5bbe149d90da873de0fe4ae47a98749f81fe6c7fe0587b31bf42394",
+      "bytes": 10886
+    },
+    {
+      "name": "04-models-and-solution.md",
+      "sha256": "7422132b2433c7930a5aaa27c9188b2e56c0db91aec6206a767087dc3f347ab5",
+      "bytes": 13399
+    },
+    {
+      "name": "05-coverage-brainstorm.md",
+      "sha256": "39d287bef392e76384c6d6679edcab44626654f4135edebfa714c9ea2229b18a",
+      "bytes": 4816
+    },
+    {
+      "name": "README.md",
+      "sha256": "9f99c65bbb0c51508bbd5620329656cd1781cddf11c716053d968e80ccd45f44",
+      "bytes": 1808
+    }
+  ],
+  "warnings": []
+}

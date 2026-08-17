@@ -1,0 +1,33 @@
+# Netlify config for Remembrancer, the central narrative index.
+# The public site is static; local file-writing edits use tools/serve.py.
+[build]
+  publish = ".netlify-site"
+  command = "python3 tools/build_site.py"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+
+[[redirects]]
+  from = "/why"
+  to = "/field-notes/index.html"
+  status = 200
+
+# raw transcripts and banks should render in-browser, not download
+[[headers]]
+  for = "/evidence/*.md"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/evidence/*/*.md"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+
+[[headers]]
+  for = "/evidence/*/runs/*/*.md"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"

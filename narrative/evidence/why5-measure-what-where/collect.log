@@ -1,0 +1,127 @@
+48 runs
+[claude-4.6-opus-high] E1r1: 66s len=7680
+[claude-4.6-opus-high] E2r1: 78s len=3928
+[claude-4.6-opus-high] E3r1: 41s len=1712
+[claude-4.6-opus-high] E4r1: 41s len=2843
+[claude-4.6-opus-high] G1r1: 26s len=339
+[claude-4.6-opus-high] G2r1: 26s len=300
+[claude-4.6-opus-high] G3r1: 29s len=542
+[claude-4.6-opus-high] G4r1: 26s len=312
+[claude-4.6-opus-high] S1r1: 75s len=4338
+[claude-4.6-opus-high] S2r1: 97s len=5768
+[claude-4.6-opus-high] S3r1: 55s len=3590
+[claude-4.6-opus-high] E5r1: 46s len=5424
+[gpt-5.4-medium] E1r1: 143s len=9049
+[gpt-5.4-medium] E2r1: 143s len=1777
+[gpt-5.4-medium] E3r1: 53s len=1991
+[gpt-5.4-medium] E4r1: 148s len=2817
+[gpt-5.4-medium] G1r1: 183s len=1736
+[gpt-5.4-medium] G2r1: 202s len=2833
+[gpt-5.4-medium] G3r1: 256s len=3659
+[gpt-5.4-medium] G4r1: 25s len=345
+[gpt-5.4-medium] S1r1: 669s len=0
+[gpt-5.4-medium] S2r1: 94s len=4025
+[gpt-5.4-medium] S3r1: 509s len=1345
+[gpt-5.4-medium] E5r1: 143s len=7811
+[cursor-grok-4.5-medium] E1r1: 100s len=8917
+[cursor-grok-4.5-medium] E2r1: 366s len=2498
+[cursor-grok-4.5-medium] E3r1: 51s len=2086
+[cursor-grok-4.5-medium] E4r1: 115s len=4208
+[cursor-grok-4.5-medium] G1r1: 156s len=925
+[cursor-grok-4.5-medium] G2r1: 219s len=1285
+[cursor-grok-4.5-medium] G3r1: 246s len=2707
+[cursor-grok-4.5-medium] G4r1: 376s len=1113
+[cursor-grok-4.5-medium] S1r1: 442s len=2446
+[cursor-grok-4.5-medium] S2r1: 236s len=4005
+[cursor-grok-4.5-medium] S3r1: 262s len=2082
+[cursor-grok-4.5-medium] E5r1: 79s len=7690
+[gemini-3.5-flash] E1r1: 82s len=8045
+[gemini-3.5-flash] E2r1: 75s len=4480
+[gemini-3.5-flash] E3r1: 61s len=4071
+[gemini-3.5-flash] E4r1: 122s len=8302
+[gemini-3.5-flash] G1r1: 474s len=2097
+[gemini-3.5-flash] G2r1: 434s len=4614
+[gemini-3.5-flash] G3r1: 425s len=3291
+Traceback (most recent call last):
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why5-measure-what-where/collect5.py", line 39, in <module>
+    for note in ex.map(run_one, jobs):
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why5-measure-what-where/collect5.py", line 23, in run_one
+    p = subprocess.run(["docker", "run", "--rm", "--network", "host",
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['docker', 'run', '--rm', '--network', 'host', '-v', '/home/beeps/.local/share/cursor-agent:/opt/ca:ro', '-v', '/tmp/claude-1000/why5-config:/root/.config/cursor', '-v', '/tmp/claude-1000/why5/gemini-3.5-flash-G4-r1:/work', '-w', '/work', '--entrypoint', '/opt/ca/versions/2026.07.16-899851b/cursor-agent', 'vllm/vllm-openai:cu130-nightly', '-p', 'How many complaints in the Bengaluru data were logged within about 1 km of Bellandur lake? Use the coordinates in the data. Citations please.', '--model', 'gemini-3.5-flash', '--trust', '-f', '--approve-mcps']' timed out after 700 seconds
+EXIT=1
+48 runs
+[claude-4.6-opus-high] E1r1: cached
+[claude-4.6-opus-high] E2r1: cached
+[claude-4.6-opus-high] E3r1: cached
+[claude-4.6-opus-high] E4r1: cached
+[claude-4.6-opus-high] G1r1: cached
+[claude-4.6-opus-high] G2r1: cached
+[claude-4.6-opus-high] G3r1: cached
+[claude-4.6-opus-high] G4r1: cached
+[claude-4.6-opus-high] S1r1: cached
+[claude-4.6-opus-high] S2r1: cached
+[claude-4.6-opus-high] S3r1: cached
+[claude-4.6-opus-high] E5r1: cached
+[gpt-5.4-medium] E1r1: cached
+[gpt-5.4-medium] E2r1: cached
+[gpt-5.4-medium] E3r1: cached
+[gpt-5.4-medium] E4r1: cached
+[gpt-5.4-medium] G1r1: cached
+[gpt-5.4-medium] G2r1: cached
+[gpt-5.4-medium] G3r1: cached
+[gpt-5.4-medium] G4r1: cached
+[gpt-5.4-medium] S1r1: 362s len=3187
+[gpt-5.4-medium] S2r1: cached
+[gpt-5.4-medium] S3r1: cached
+[gpt-5.4-medium] E5r1: cached
+[cursor-grok-4.5-medium] E1r1: cached
+[cursor-grok-4.5-medium] E2r1: cached
+[cursor-grok-4.5-medium] E3r1: cached
+[cursor-grok-4.5-medium] E4r1: cached
+[cursor-grok-4.5-medium] G1r1: cached
+[cursor-grok-4.5-medium] G2r1: cached
+[cursor-grok-4.5-medium] G3r1: cached
+[cursor-grok-4.5-medium] G4r1: cached
+[cursor-grok-4.5-medium] S1r1: cached
+[cursor-grok-4.5-medium] S2r1: cached
+[cursor-grok-4.5-medium] S3r1: cached
+[cursor-grok-4.5-medium] E5r1: cached
+[gemini-3.5-flash] E1r1: cached
+[gemini-3.5-flash] E2r1: cached
+[gemini-3.5-flash] E3r1: cached
+[gemini-3.5-flash] E4r1: cached
+[gemini-3.5-flash] G1r1: cached
+[gemini-3.5-flash] G2r1: cached
+[gemini-3.5-flash] G3r1: cached
+[gemini-3.5-flash] G4r1: 490s len=2776
+[gemini-3.5-flash] S1r1: cached
+[gemini-3.5-flash] S2r1: cached
+[gemini-3.5-flash] S3r1: cached
+[gemini-3.5-flash] E5r1: 85s len=8666
+WHY5-DONE
+EXIT=0

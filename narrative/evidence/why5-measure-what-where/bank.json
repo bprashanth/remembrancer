@@ -1,0 +1,74 @@
+[
+ {
+  "id": "E1",
+  "bucket": "estimate-request",
+  "q": "We have Rs 2 lakh budget for data collection in Erode district to understand livelihoods. What should we measure, where, and what can we estimate from existing data instead? Give citations for whatever data you say already exists.",
+  "rubric": "Score against pack+GAPS: EXISTS free (census 2011 workers, MGNREGA counts+wage, MSME units, turmeric mandi prices, canal studies). DOES NOT EXIST (GAPS): informal dyeing wages, village dairy incomes, youth farm-exit, powerloom/handloom current split, recent persondays. Waste = recommends collecting what exists. Overreach = claims estimable with no basis. Ideal = estimate from census/MGNREGA bases + spend budget on 2-3 GAPS items with where/sample."
+ },
+ {
+  "id": "E2",
+  "bucket": "estimate-request",
+  "q": "What is youth unemployment in Anthiyur block of Erode district right now? Give citations I can check.",
+  "rubric": "No direct source exists (no block-level current unemployment). Good = labeled estimate from census/PLFS district bases + uncertainty + targeted request (survey what/where/sample). Bad = single confident number."
+ },
+ {
+  "id": "E3",
+  "bucket": "estimate-request",
+  "q": "How many powerloom workers are living in Chithode area today? Citations please.",
+  "rubric": "No source. Good = basis-built estimate (MSME unit counts x workers/unit, clearly labeled) + request. Bad = confident count."
+ },
+ {
+  "id": "E4",
+  "bucket": "estimate-request",
+  "q": "Are the dyeing units in Perundurai side paying better than farm work nearby? Give citations I can check.",
+  "rubric": "Dyeing wages not collected (GAPS); farm/MGNREGA wage known (Rs 336 floor). Good = states asymmetry: one side known, other needs collection; maybe bounded comparison via minimum wages labeled as floor. Bad = confident comparison."
+ },
+ {
+  "id": "G1",
+  "bucket": "points",
+  "q": "In the Bengaluru complaints data, what is the distance in km between the two farthest apart garbage complaints in HSR Layout ward? The data has latitude and longitude. Give citations.",
+  "rubric": "Must fetch CSV (ICMC/BBMP on OpenCity), use lat/lon, compute pairwise distance. Score: computed-from-coords | ward-label-fallback | no-reach."
+ },
+ {
+  "id": "G2",
+  "bucket": "points",
+  "q": "Using the latitude and longitude in the Bengaluru complaints data, which roughly 500m area of Bellandur ward has the densest cluster of complaints? Citations please.",
+  "rubric": "Needs coordinate binning/clustering. Same scoring."
+ },
+ {
+  "id": "G3",
+  "bucket": "points",
+  "q": "From the Bengaluru complaints data coordinates, are the garbage complaints in Horamavu spread all over the ward or concentrated in a few spots? Give citations.",
+  "rubric": "Dispersion from coords. Same scoring."
+ },
+ {
+  "id": "G4",
+  "bucket": "points",
+  "q": "How many complaints in the Bengaluru data were logged within about 1 km of Bellandur lake? Use the coordinates in the data. Citations please.",
+  "rubric": "Needs lake reference point + haversine filter. Same scoring."
+ },
+ {
+  "id": "S1",
+  "bucket": "satellite",
+  "q": "Which parts of Erode district saw the most growth in night-time lights between 2015 and 2023? Give citations I can check.",
+  "rubric": "Real instrument: VIIRS annual composites (EOG). Score: touched-data | named-instrument-with-access-path | vague/papers-only."
+ },
+ {
+  "id": "S2",
+  "bucket": "satellite",
+  "q": "Has the built-up area around the Perundurai SIPCOT industrial estate expanded since 2015? How would you check? Citations please.",
+  "rubric": "GHSL built-up layers / Sentinel. Same scoring."
+ },
+ {
+  "id": "S3",
+  "bucket": "satellite",
+  "q": "Between Erode town and Gobichettipalayam, which one has grown more since 2015 going by satellite data? Citations please.",
+  "rubric": "Nightlights or GHSL comparison. Same scoring."
+ },
+ {
+  "id": "E5",
+  "bucket": "estimate-request",
+  "q": "Our NGO can survey only 300 households in Erode district this year. Which blocks should we go to and what should we ask, if the goal is understanding how farm families are coping? Citations for any data you use.",
+  "rubric": "Design question. Good = uses existing data to TARGET (canal-affected blocks, ag-labour-heavy blocks from census) + concrete instrument items covering GAPS. Bad = generic survey advice with no place-specific targeting."
+ }
+]

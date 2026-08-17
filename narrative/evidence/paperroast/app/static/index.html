@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>paperroast</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="top">
+      <div class="brand">
+        <h1>paperroast</h1>
+        <p class="tagline">Design paper forms · extract · verify in the same grid</p>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button type="button" class="tab active" data-tab="design" role="tab" aria-selected="true">Design</button>
+        <button type="button" class="tab" data-tab="templates" role="tab" aria-selected="false">Templates</button>
+        <button type="button" class="tab" data-tab="verify" role="tab" aria-selected="false">Verify</button>
+      </nav>
+    </header>
+
+    <!-- ═══════════════ DESIGN ═══════════════ -->
+    <section id="tab-design" class="panel active" role="tabpanel">
+      <div class="design-layout">
+        <form id="design-form" class="card-block">
+          <div class="form-row">
+            <label class="grow">Title
+              <input type="text" id="d-title" required placeholder="e.g. PHC Growth Monitoring Register" autocomplete="off">
+            </label>
+            <label>Orientation
+              <select id="d-orient">
+                <option value="portrait">portrait</option>
+                <option value="landscape">landscape</option>
+              </select>
+            </label>
+            <label class="narrow">Rows
+              <input type="number" id="d-rows" min="1" max="60" value="16" required>
+            </label>
+          </div>
+          <p class="hint" id="orient-hint" hidden>Suggested landscape — more than 7 columns.</p>
+
+          <div class="starters">
+            <div class="examples">
+              <span class="examples-label">Try an example:</span>
+              <button type="button" class="btn ghost" id="ex-growth">Health growth register</button>
+              <button type="button" class="btn ghost" id="ex-attendance">School attendance register</button>
+            </div>
+            <div class="sample-start">
+              <span class="examples-label">Start from a sample</span>
+              <input type="file" id="d-sample" accept="image/*,.pdf,application/pdf">
+              <button type="button" class="btn" id="propose-sample">Propose from sample</button>
+              <p class="hint sample-hint">Upload a photo of an existing paper form — a model proposes the template; review before creating.</p>
+            </div>
+          </div>
+          <div id="sample-warning" class="warn-banner" hidden></div>
+
+          <div class="editor-block">
+            <div class="editor-head">
+              <h2>Header fields</h2>
+              <button type="button" class="btn small" id="add-header">+ Add</button>
+            </div>
+            <div id="header-list" class="editor-list"></div>
+          </div>
+
+          <div class="editor-block">
+            <div class="editor-head">
+              <h2>Columns</h2>
+              <button type="button" class="btn small" id="add-column">+ Add</button>
+            </div>
+            <div id="column-list" class="editor-list"></div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary" id="create-btn">Create &amp; preview</button>
+          </div>
+          <div id="design-error" class="error-banner" hidden></div>
+        </form>
+
+        <aside id="design-preview" class="card-block preview-pane" hidden>
+          <div class="preview-head">
+            <h2>Preview</h2>
+            <span class="mono" id="preview-id"></span>
+          </div>
+          <div class="preview-actions">
+            <a id="dl-pdf" class="btn" href="#" download>Download blank PDF</a>
+            <button type="button" class="btn" id="gen-sample">Generate sample fill</button>
+            <button type="button" class="btn ghost" id="regen-sample" hidden>Regenerate</button>
+          </div>
+          <div class="preview-images">
+            <figure>
+              <figcaption>Blank form</figcaption>
+              <img id="preview-img" alt="Form preview">
+            </figure>
+            <figure id="sample-figure" hidden>
+              <figcaption>Sample fill</figcaption>
+              <img id="sample-img" alt="Synthetic filled sample">
+            </figure>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ═══════════════ TEMPLATES ═══════════════ -->
+    <section id="tab-templates" class="panel" role="tabpanel" hidden>
+      <div class="panel-toolbar">
+        <h2>Templates</h2>
+        <button type="button" class="btn ghost" id="refresh-templates">Refresh</button>
+      </div>
+      <div id="templates-empty" class="empty" hidden>No templates yet — create one in Design.</div>
+      <div id="templates-grid" class="gallery"></div>
+    </section>
+
+    <!-- ═══════════════ VERIFY ═══════════════ -->
+    <section id="tab-verify" class="panel" role="tabpanel" hidden>
+      <form id="verify-form" class="card-block verify-controls">
+        <div class="form-row">
+          <label class="grow">Filled photo or PDF
+            <input type="file" id="v-file" accept="image/*,.pdf,application/pdf" required>
+          </label>
+          <label>Provider
+            <select id="v-provider"></select>
+          </label>
+          <label>Template
+            <select id="v-template">
+              <option value="">auto (read QR)</option>
+            </select>
+          </label>
+          <div class="form-actions inline">
+            <button type="submit" class="btn primary" id="extract-btn">Extract</button>
+          </div>
+        </div>
+      </form>
+
+      <div id="extract-progress" class="progress" hidden>
+        <div class="spinner" aria-hidden="true"></div>
+        <p id="progress-text">Reading form…</p>
+      </div>
+      <div id="extract-error" class="error-banner" hidden></div>
+
+      <div id="result" hidden>
+        <div id="verdict-banner" class="verdict">
+          <div class="verdict-main">
+            <strong id="verdict-label"></strong>
+            <span class="mono" id="verdict-id"></span>
+          </div>
+          <ul id="verdict-reasons"></ul>
+          <p class="stats-line" id="verdict-stats"></p>
+        </div>
+
+        <div class="result-toolbar">
+          <a id="dl-xlsx" class="btn" href="#" download hidden>Download .xlsx</a>
+          <button type="button" class="btn" id="export-csv" hidden>Export corrected CSV</button>
+          <div class="flag-legend" aria-label="Flag color legend">
+            <span class="lg domain">domain</span>
+            <span class="lg unread_ink">unread ink</span>
+            <span class="lg serial_mismatch">serial</span>
+            <span class="lg shape">shape</span>
+            <span class="lg shift_fixed">auto-fixed shift</span>
+            <span class="lg cell_mode">cell-by-cell read</span>
+          </div>
+        </div>
+
+        <div class="compare">
+          <div class="compare-pane">
+            <h3>Aligned photo</h3>
+            <div class="image-stage" id="image-stage">
+              <img id="aligned-img" alt="Aligned form photo">
+              <svg id="grid-overlay" xmlns="http://www.w3.org/2000/svg"></svg>
+            </div>
+            <p id="no-aligned" class="hint" hidden>No aligned image available for this extraction.</p>
+          </div>
+          <div class="compare-pane">
+            <h3>Extracted grid</h3>
+            <div id="header-chips" class="chips"></div>
+            <div class="table-scroll">
+              <table id="extract-table" class="grid-table"></table>
+            </div>
+            <p id="no-grid" class="hint" hidden>No grid returned.</p>
+          </div>
+        </div>
+
+        <details class="raw-json">
+          <summary>Raw JSON</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </div>
+    </section>
+  </div>
+
+  <div id="cell-modal" class="modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cell-modal-title">
+      <div class="modal-head">
+        <h2 id="cell-modal-title">Correct cell</h2>
+        <button type="button" class="btn icon" id="cell-modal-close" title="Close" aria-label="Close">×</button>
+      </div>
+      <div class="modal-body">
+        <img id="cell-modal-img" alt="Zoomed cell crop">
+        <label class="cell-value-label">Value
+          <input type="text" id="cell-modal-input" autocomplete="off">
+        </label>
+      </div>
+      <div class="modal-actions">
+        <button type="button" class="btn ghost" data-close-modal>Cancel</button>
+        <button type="button" class="btn primary" id="cell-modal-save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

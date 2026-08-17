@@ -1,0 +1,47 @@
+[
+  {
+    "id": "H1",
+    "q": "how many ration shops are there in thalavadi taluk of erode, full time and part time both? give citations i can check.",
+    "gold": "40 fair price shops total in Thalavadi taluk, Erode district, for 2023-24: 15 full-time + 25 part-time.",
+    "source_url": "https://cdn.s3waas.gov.in/s3bca82e41ee7b0833588399b1fcd177c7/uploads/2025/01/2025012713.pdf",
+    "locator": "Erode District Statistical Handbook 2023-24, Table 9.1 'Number of Fair Price Shops', row 'THALAVADI', printed page 45 (Source line in the table: District Supply Office, Erode). Handbook found via https://erode.nic.in/document/district-statistical-handbook-2023-24/ which links straight to the PDF above.",
+    "verified": "2026-07-19",
+    "hardness": "pdf-table"
+  },
+  {
+    "id": "H2",
+    "q": "how many villages come under anthiyur taluk in erode district? give citations i can check.",
+    "gold": "35 villages are listed under Anthiyur taluk (taluk id 244) of Erode district (district id 12) in the state government's own village master list. Note: this is the count from this specific administrative master list, not a census village count, and the two can differ by a few villages depending on how forest hamlets/uninhabited revenue villages are treated.",
+    "source_url": "https://portalwebservice.tnpds.gov.in/village?talukid=244",
+    "locator": "JSON response, key 'villageListDto', array of 35 objects, each with a village id and name, all carrying talukDto.id=244 (Anthiyur) and talukDto.districtDto.id=12 (Erode). Reached by first calling /district/getall to get Erode's district id (12), then /taluk?districtid=12 to get Anthiyur's taluk id (244), then /village?talukid=244. This backend sits behind the Tamil Nadu Public Distribution System citizen portal (www.tnpds.gov.in), which is a JS single-page app with no visible data on plain page fetch — the underlying API calls had to be found inside the compiled JS bundle.",
+    "verified": "2026-07-19",
+    "hardness": "portal"
+  },
+  {
+    "id": "H3",
+    "q": "which bank has the most branches in erode district and how many does it have? give citations i can check.",
+    "gold": "Canara Bank, with 50 branches recorded in Erode district (427 branches total across all banks in the dataset). Next closest are State Bank of India (46) and Indian Overseas Bank (45).",
+    "source_url": "https://drive.google.com/uc?export=download&id=1Yp_OGcYqFWZKcvJIPn0pZyAXJdcGkrCO",
+    "locator": "File data/rbi_directory_shrid.csv inside the downloaded zip. Filtered rows where pc11_state_id=33 (Tamil Nadu) and pc11_district_id=610, then counted by rbi_bank. district_id 610 was confirmed as Erode by cross-checking that its rows carry Erode pincodes (638xxx) and addresses that literally say 'ERODE DISTRICT'. Dataset: 'RBI Bank Branches' module, contributed by Sandhya Garg and Samarth Gupta (source paper: Garg & Gupta, 'Financial access of unbanked villages in India from 1951 to 2019: A Spatial Approach', IEG Working Paper No. 403, 2020), distributed through the SHRUG platform's external-contributions table at https://www.devdatalab.org/shrug_download/ (the download link itself is a Google Sheet -> Google Drive file, not a normal web page).",
+    "verified": "2026-07-19",
+    "hardness": "data-deposit"
+  },
+  {
+    "id": "H4",
+    "q": "for organic turmeric farms in erode, what does hired labour cost per hectare, going by any proper cost study? give citations i can check.",
+    "gold": "Rs 55,660 per hectare for hired human labour (this is 27.07% of the total Cost C for organic turmeric in the sample).",
+    "source_url": "https://journal.ijresm.com/index.php/ijresm/article/download/2355/2293/2929",
+    "locator": "Rengaraju, R., Kokila, G., Sakthivel, T., 'Comparative Economic Analysis of Cost and Returns of Organic and Inorganic Turmeric Production in Erode District of Tamil Nadu', International Journal of Research in Engineering, Science and Management, Vol 5, No 9, September 2022, pp 41-44. Table 2 'Cost and Returns of Organic Turmeric in the Sample Farms (Rs./ha)', row 2 'Hired Human Labour', page 42 of the article. This number does not appear in the abstract (which only gives the overall cost-per-quintal and benefit-cost-ratio figures) — you have to open the PDF and read the itemised cost table.",
+    "verified": "2026-07-19",
+    "hardness": "supplementary"
+  },
+  {
+    "id": "H5",
+    "q": "how many milk co-op societies were there in erode district, and how much milk did they produce? give citations i can check.",
+    "gold": "713 milk producer co-operative societies (including 3 milk chilling plants), producing 8,43,59,940 litres of milk valued at Rs 1,54,63,19,326, as recorded in the Erode district handbook for 2011-12.",
+    "source_url": "http://web.archive.org/web/20170517122529/http://erode.nic.in:80/dh1112/dh1112-5.pdf",
+    "locator": "Table 5.4 'Dairy Development', page 19 of the PDF (source line inside the table: Erode District Milk Producers Union, Erode). This is table 5 of the old Erode District Statistical Handbook 2011-12, which used to be published as 47 separate small PDFs at erode.nic.in/dh1112/dh1112-N.pdf. The live URL now 404s (confirmed 2026-07-19) and the current erode.nic.in site only carries the newest combined handbook; this table only survives on the Wayback Machine snapshot above.",
+    "verified": "2026-07-19",
+    "hardness": "archived"
+  }
+]

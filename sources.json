@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "policy": "Narrative citations resolve to evidence checked into Remembrancer.",
+  "narratives": [
+    {
+      "id": "insight-out-field-notes",
+      "title": "Field notes from Insight Out",
+      "pages": ["narrative/field-notes/index.html"],
+      "evidence": {
+        "path": "narrative/evidence",
+        "includes": ["designs", "question banks", "collectors", "scores", "results", "per-model runs"]
+      }
+    },
+    {
+      "id": "paperroast-form-data",
+      "title": "Form data",
+      "pages": ["narrative/form-data/index.html", "narrative/form-data-deep/index.html"],
+      "chronology": "chronology/paperroast",
+      "evidence": {
+        "path": "narrative/evidence/paperroast",
+        "includes": ["findings", "core code", "evaluation code", "results", "cell benchmark", "XLSForm census"],
+        "omits": ["large generated corpora", "model weights", "private partner forms"]
+      }
+    }
+  ]
+}

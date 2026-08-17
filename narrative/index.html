@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Remembrancer</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;background:#fff;color:#000}
+body{font:18px/1.5 Arial,Helvetica,sans-serif}
+.landing{width:min(900px,calc(100% - 32px));margin:48px auto;display:grid;grid-template-columns:210px minmax(0,1fr);column-gap:48px;align-items:start}
+.landing>img{display:block;width:190px;height:auto;margin:4px 0 0}
+main{min-width:0}
+h1{font-size:36px;line-height:1.1;margin:0 0 28px}
+.label,.tag{font:13px/1.5 ui-monospace,monospace;text-transform:uppercase}
+nav{margin-top:42px;border-top:1px solid #000}
+nav a{display:block;padding:16px 0;border-bottom:1px solid #000;color:#000;text-decoration:none;font-size:22px}
+nav a:hover,nav a:focus{text-decoration:underline;outline:none}
+@media(max-width:650px){.landing{display:block;margin:28px auto}.landing>img{width:120px;margin:0 0 28px}h1{font-size:30px}nav a{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="landing">
+<img src="assets/remembrancer.png" alt="Remembrancer">
+<main id="content">
+<section class="entry"><div class="inner"><h1>Remembrancer</h1>
+<p>Archive of findings</p>
+<nav></nav></div></section>
+</main>
+</div>
+</body>
+</html>

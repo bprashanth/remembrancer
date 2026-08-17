@@ -1,0 +1,18 @@
+15 runs
+[gpt-5.4-medium] X1r1: 233s len=2975
+[gpt-5.4-medium] X2r1: 643s len=2867
+[gpt-5.4-medium] X3r1: 174s len=5796
+[gpt-5.4-medium] X4r1: 114s len=2684
+[gpt-5.4-medium] X5r1: 93s len=2856
+[cursor-grok-4.5-medium] X1r1: 177s len=1512
+[cursor-grok-4.5-medium] X2r1: TIMEOUT
+[cursor-grok-4.5-medium] X3r1: 424s len=4376
+[cursor-grok-4.5-medium] X4r1: 95s len=3025
+[cursor-grok-4.5-medium] X5r1: 111s len=1776
+[gemini-3.5-flash] X1r1: 431s len=8179
+[gemini-3.5-flash] X2r1: 386s len=5853
+[gemini-3.5-flash] X3r1: 274s len=6316
+[gemini-3.5-flash] X4r1: 102s len=4122
+[gemini-3.5-flash] X5r1: 123s len=4526
+WHY7-DONE
+EXIT=0

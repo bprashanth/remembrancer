@@ -1,0 +1,9 @@
+[R1] ir-stable=True result-stable=True
+[R3] ir-stable=True result-stable=True
+[R4] ir-stable=True result-stable=True
+[G4] ir-stable=True result-stable=True
+[N1] ir-stable=True result-stable=True
+[N3] ir-stable=True result-stable=True
+[U1] ir-stable=True result-stable=True
+WHY6-HARNESS-DONE
+EXIT=0

@@ -1,0 +1,480 @@
+{"png": "name_000.png", "type": "name", "golden": "Omar M.", "mode": "plain", "got": "Omar M.", "ok": true}
+{"png": "name_000.png", "type": "name", "golden": "Omar M.", "mode": "domain", "got": "Omar M.", "ok": true}
+{"png": "name_001.png", "type": "name", "golden": "Kavita Nair", "mode": "plain", "got": "Kavita Nair", "ok": true}
+{"png": "name_001.png", "type": "name", "golden": "Kavita Nair", "mode": "domain", "got": "Kavita Nair", "ok": true}
+{"png": "name_002.png", "type": "name", "golden": "Sunita", "mode": "plain", "got": "Sunita", "ok": true}
+{"png": "name_002.png", "type": "name", "golden": "Sunita", "mode": "domain", "got": "Sunita", "ok": true}
+{"png": "name_003.png", "type": "name", "golden": "Parvati Khan", "mode": "plain", "got": "Parvati Khan", "ok": true}
+{"png": "name_003.png", "type": "name", "golden": "Parvati Khan", "mode": "domain", "got": "Parvati Khan", "ok": true}
+{"png": "name_004.png", "type": "name", "golden": "Arjun S.", "mode": "plain", "got": "Arjun S.", "ok": true}
+{"png": "name_004.png", "type": "name", "golden": "Arjun S.", "mode": "domain", "got": "Arjun S.", "ok": true}
+{"png": "name_005.png", "type": "name", "golden": "Jyoti Iyer", "mode": "plain", "got": "Jyoti Iyer", "ok": true}
+{"png": "name_005.png", "type": "name", "golden": "Jyoti Iyer", "mode": "domain", "got": "Jyoti Iyer", "ok": true}
+{"png": "name_006.png", "type": "name", "golden": "Mahesh Kulkarni", "mode": "plain", "got": "Mahesh Kulkarni", "ok": true}
+{"png": "name_006.png", "type": "name", "golden": "Mahesh Kulkarni", "mode": "domain", "got": "Mahesh Kulkarni", "ok": true}
+{"png": "name_007.png", "type": "name", "golden": "Prakash", "mode": "plain", "got": "Prakash", "ok": true}
+{"png": "name_007.png", "type": "name", "golden": "Prakash", "mode": "domain", "got": "Prakash", "ok": true}
+{"png": "name_008.png", "type": "name", "golden": "Blunjari", "mode": "plain", "got": "Bluniari", "ok": false}
+{"png": "name_008.png", "type": "name", "golden": "Blunjari", "mode": "domain", "got": "Bluniari", "ok": false}
+{"png": "name_009.png", "type": "name", "golden": "Zoya", "mode": "plain", "got": "Zoxa", "ok": false}
+{"png": "name_009.png", "type": "name", "golden": "Zoya", "mode": "domain", "got": "Zoxa", "ok": false}
+{"png": "name_010.png", "type": "name", "golden": "Lakshmi R.", "mode": "plain", "got": "Lakshmi R", "ok": false}
+{"png": "name_010.png", "type": "name", "golden": "Lakshmi R.", "mode": "domain", "got": "Lakshmi R", "ok": false}
+{"png": "name_011.png", "type": "name", "golden": "Deepak Joshi", "mode": "plain", "got": "Deepak Joshi", "ok": true}
+{"png": "name_011.png", "type": "name", "golden": "Deepak Joshi", "mode": "domain", "got": "Deepak Joshi", "ok": true}
+{"png": "name_012.png", "type": "name", "golden": "Yasmin Shaikh", "mode": "plain", "got": "Yasmin Shaikh", "ok": true}
+{"png": "name_012.png", "type": "name", "golden": "Yasmin Shaikh", "mode": "domain", "got": "Yasmin Shaikh", "ok": true}
+{"png": "name_013.png", "type": "name", "golden": "Harish", "mode": "plain", "got": "Harish", "ok": true}
+{"png": "name_013.png", "type": "name", "golden": "Harish", "mode": "domain", "got": "Harish", "ok": true}
+{"png": "name_014.png", "type": "name", "golden": "Klyvento", "mode": "plain", "got": "Klyvento", "ok": true}
+{"png": "name_014.png", "type": "name", "golden": "Klyvento", "mode": "domain", "got": "Klyvento", "ok": true}
+{"png": "name_015.png", "type": "name", "golden": "Geeta Agarwal", "mode": "plain", "got": "Geeta Agarwal", "ok": true}
+{"png": "name_015.png", "type": "name", "golden": "Geeta Agarwal", "mode": "domain", "got": "Geeta Agarwal", "ok": true}
+{"png": "name_016.png", "type": "name", "golden": "Lakshmi V.", "mode": "plain", "got": "Lakshmi V.", "ok": true}
+{"png": "name_016.png", "type": "name", "golden": "Lakshmi V.", "mode": "domain", "got": "Lakshmi V.", "ok": true}
+{"png": "name_017.png", "type": "name", "golden": "Ganesh Pandey", "mode": "plain", "got": "Ganesh Pandey", "ok": true}
+{"png": "name_017.png", "type": "name", "golden": "Ganesh Pandey", "mode": "domain", "got": "Ganesh Pandey", "ok": true}
+{"png": "name_018.png", "type": "name", "golden": "Neha G.", "mode": "plain", "got": "Neha G.", "ok": true}
+{"png": "name_018.png", "type": "name", "golden": "Neha G.", "mode": "domain", "got": "Neha G.", "ok": true}
+{"png": "name_019.png", "type": "name", "golden": "Chitra", "mode": "plain", "got": "Chitra", "ok": true}
+{"png": "name_019.png", "type": "name", "golden": "Chitra", "mode": "domain", "got": "Chitra", "ok": true}
+{"png": "name_020.png", "type": "name", "golden": "Deepa Verma", "mode": "plain", "got": "Deepa Verma", "ok": true}
+{"png": "name_020.png", "type": "name", "golden": "Deepa Verma", "mode": "domain", "got": "Deepa Verma", "ok": true}
+{"png": "name_021.png", "type": "name", "golden": "Rajesh", "mode": "plain", "got": "Rajesh", "ok": true}
+{"png": "name_021.png", "type": "name", "golden": "Rajesh", "mode": "domain", "got": "Rajesh", "ok": true}
+{"png": "name_022.png", "type": "name", "golden": "Sanjay M.", "mode": "plain", "got": "SaniAY m.", "ok": false}
+{"png": "name_022.png", "type": "name", "golden": "Sanjay M.", "mode": "domain", "got": "SaniAY m.", "ok": false}
+{"png": "name_023.png", "type": "name", "golden": "Karthik", "mode": "plain", "got": "Karthik", "ok": true}
+{"png": "name_023.png", "type": "name", "golden": "Karthik", "mode": "domain", "got": "Karthik", "ok": true}
+{"png": "name_024.png", "type": "name", "golden": "Balaji Ghosh", "mode": "plain", "got": "Balaji Ghosh", "ok": true}
+{"png": "name_024.png", "type": "name", "golden": "Balaji Ghosh", "mode": "domain", "got": "Balaji Ghosh", "ok": true}
+{"png": "name_025.png", "type": "name", "golden": "Dinesh P.", "mode": "plain", "got": "Dinesh P.", "ok": true}
+{"png": "name_025.png", "type": "name", "golden": "Dinesh P.", "mode": "domain", "got": "Dinesh P.", "ok": true}
+{"png": "name_026.png", "type": "name", "golden": "Gwespari", "mode": "plain", "got": "GweSpar/", "ok": false}
+{"png": "name_026.png", "type": "name", "golden": "Gwespari", "mode": "domain", "got": "GweSparl", "ok": false}
+{"png": "name_027.png", "type": "name", "golden": "Neha Deshmukh", "mode": "plain", "got": "Neha Deshmukh", "ok": true}
+{"png": "name_027.png", "type": "name", "golden": "Neha Deshmukh", "mode": "domain", "got": "Neha Deshmukh", "ok": true}
+{"png": "name_028.png", "type": "name", "golden": "Teqvaso", "mode": "plain", "got": "Tervaso", "ok": false}
+{"png": "name_028.png", "type": "name", "golden": "Teqvaso", "mode": "domain", "got": "Tervaso", "ok": false}
+{"png": "name_029.png", "type": "name", "golden": "Rekha Naidu", "mode": "plain", "got": "Rekha Naidu", "ok": true}
+{"png": "name_029.png", "type": "name", "golden": "Rekha Naidu", "mode": "domain", "got": "Rekha Naidu", "ok": true}
+{"png": "name_030.png", "type": "name", "golden": "Dinesh", "mode": "plain", "got": "Dinesh", "ok": true}
+{"png": "name_030.png", "type": "name", "golden": "Dinesh", "mode": "domain", "got": "Dinesh", "ok": true}
+{"png": "name_031.png", "type": "name", "golden": "Ananya Shetty", "mode": "plain", "got": "Ananya Shetty", "ok": true}
+{"png": "name_031.png", "type": "name", "golden": "Ananya Shetty", "mode": "domain", "got": "Ananya Shetty", "ok": true}
+{"png": "name_032.png", "type": "name", "golden": "Basanti", "mode": "plain", "got": "Basanti", "ok": true}
+{"png": "name_032.png", "type": "name", "golden": "Basanti", "mode": "domain", "got": "Basanti", "ok": true}
+{"png": "name_033.png", "type": "name", "golden": "Neha", "mode": "plain", "got": "Neha", "ok": true}
+{"png": "name_033.png", "type": "name", "golden": "Neha", "mode": "domain", "got": "Neha", "ok": true}
+{"png": "name_034.png", "type": "name", "golden": "Vijay", "mode": "plain", "got": "Vijay", "ok": true}
+{"png": "name_034.png", "type": "name", "golden": "Vijay", "mode": "domain", "got": "Vijay", "ok": true}
+{"png": "name_035.png", "type": "name", "golden": "Chitra", "mode": "plain", "got": "Chitra", "ok": true}
+{"png": "name_035.png", "type": "name", "golden": "Chitra", "mode": "domain", "got": "Chitra", "ok": true}
+{"png": "name_036.png", "type": "name", "golden": "Mahesh", "mode": "plain", "got": "mahesh", "ok": true}
+{"png": "name_036.png", "type": "name", "golden": "Mahesh", "mode": "domain", "got": "mahesh", "ok": true}
+{"png": "name_037.png", "type": "name", "golden": "Kiran Khan", "mode": "plain", "got": "Kiran Khan", "ok": true}
+{"png": "name_037.png", "type": "name", "golden": "Kiran Khan", "mode": "domain", "got": "Kiran Khan", "ok": true}
+{"png": "name_038.png", "type": "name", "golden": "Geeta Thakur", "mode": "plain", "got": "Geeta Thakur", "ok": true}
+{"png": "name_038.png", "type": "name", "golden": "Geeta Thakur", "mode": "domain", "got": "Geeta Thakur", "ok": true}
+{"png": "name_039.png", "type": "name", "golden": "Sunita M.", "mode": "plain", "got": "Sunita M", "ok": false}
+{"png": "name_039.png", "type": "name", "golden": "Sunita M.", "mode": "domain", "got": "Sunita M", "ok": false}
+{"png": "name_040.png", "type": "name", "golden": "Venkatesh S.", "mode": "plain", "got": "Venkatesh S.", "ok": true}
+{"png": "name_040.png", "type": "name", "golden": "Venkatesh S.", "mode": "domain", "got": "Venkatesh S.", "ok": true}
+{"png": "name_041.png", "type": "name", "golden": "Arjun K.", "mode": "plain", "got": "Arjun K.", "ok": true}
+{"png": "name_041.png", "type": "name", "golden": "Arjun K.", "mode": "domain", "got": "Arjun K.", "ok": true}
+{"png": "name_042.png", "type": "name", "golden": "Balaji Malik", "mode": "plain", "got": "Balaj Malik", "ok": false}
+{"png": "name_042.png", "type": "name", "golden": "Balaji Malik", "mode": "domain", "got": "Balaj Malik", "ok": false}
+{"png": "name_043.png", "type": "name", "golden": "Neha B.", "mode": "plain", "got": "Neha B.", "ok": true}
+{"png": "name_043.png", "type": "name", "golden": "Neha B.", "mode": "domain", "got": "Neha B.", "ok": true}
+{"png": "name_044.png", "type": "name", "golden": "Basanti Malik", "mode": "plain", "got": "Basanti Malik", "ok": true}
+{"png": "name_044.png", "type": "name", "golden": "Basanti Malik", "mode": "domain", "got": "Basanti Malik", "ok": true}
+{"png": "name_045.png", "type": "name", "golden": "Priya", "mode": "plain", "got": "Priya", "ok": true}
+{"png": "name_045.png", "type": "name", "golden": "Priya", "mode": "domain", "got": "Priya", "ok": true}
+{"png": "name_046.png", "type": "name", "golden": "Ravi", "mode": "plain", "got": "Ravi", "ok": true}
+{"png": "name_046.png", "type": "name", "golden": "Ravi", "mode": "domain", "got": "Ravi", "ok": true}
+{"png": "name_047.png", "type": "name", "golden": "Prakash", "mode": "plain", "got": "Prakash", "ok": true}
+{"png": "name_047.png", "type": "name", "golden": "Prakash", "mode": "domain", "got": "Prakash", "ok": true}
+{"png": "name_048.png", "type": "name", "golden": "Nandini", "mode": "plain", "got": "Nandini", "ok": true}
+{"png": "name_048.png", "type": "name", "golden": "Nandini", "mode": "domain", "got": "Nandini", "ok": true}
+{"png": "name_049.png", "type": "name", "golden": "Lata", "mode": "plain", "got": "LaTa", "ok": true}
+{"png": "name_049.png", "type": "name", "golden": "Lata", "mode": "domain", "got": "Lata", "ok": true}
+{"png": "name_050.png", "type": "name", "golden": "Farhana Shetty", "mode": "plain", "got": "Farhana S/et", "ok": false}
+{"png": "name_050.png", "type": "name", "golden": "Farhana Shetty", "mode": "domain", "got": "Farhana S/et", "ok": false}
+{"png": "name_051.png", "type": "name", "golden": "Deepak", "mode": "plain", "got": "Deepak", "ok": true}
+{"png": "name_051.png", "type": "name", "golden": "Deepak", "mode": "domain", "got": "Deepak", "ok": true}
+{"png": "name_052.png", "type": "name", "golden": "Sanjay Thakur", "mode": "plain", "got": "Sanjay Thakur", "ok": true}
+{"png": "name_052.png", "type": "name", "golden": "Sanjay Thakur", "mode": "domain", "got": "Sanjay Thakur", "ok": true}
+{"png": "name_053.png", "type": "name", "golden": "Harish", "mode": "plain", "got": "Harish", "ok": true}
+{"png": "name_053.png", "type": "name", "golden": "Harish", "mode": "domain", "got": "Harish", "ok": true}
+{"png": "name_054.png", "type": "name", "golden": "Geeta", "mode": "plain", "got": "Geeta", "ok": true}
+{"png": "name_054.png", "type": "name", "golden": "Geeta", "mode": "domain", "got": "Geeta", "ok": true}
+{"png": "name_055.png", "type": "name", "golden": "Rukhvelo", "mode": "plain", "got": "rukhvelo", "ok": true}
+{"png": "name_055.png", "type": "name", "golden": "Rukhvelo", "mode": "domain", "got": "Rukhvelo", "ok": true}
+{"png": "name_056.png", "type": "name", "golden": "Geeta Khan", "mode": "plain", "got": "GeeTakhan", "ok": false}
+{"png": "name_056.png", "type": "name", "golden": "Geeta Khan", "mode": "domain", "got": "GeeTakhan", "ok": false}
+{"png": "name_057.png", "type": "name", "golden": "Ravi", "mode": "plain", "got": "Ravi", "ok": true}
+{"png": "name_057.png", "type": "name", "golden": "Ravi", "mode": "domain", "got": "Ravi", "ok": true}
+{"png": "name_058.png", "type": "name", "golden": "Suresh", "mode": "plain", "got": "Suresh", "ok": true}
+{"png": "name_058.png", "type": "name", "golden": "Suresh", "mode": "domain", "got": "Suresh", "ok": true}
+{"png": "name_059.png", "type": "name", "golden": "Sanjay", "mode": "plain", "got": "Sanjay", "ok": true}
+{"png": "name_059.png", "type": "name", "golden": "Sanjay", "mode": "domain", "got": "Sanjay", "ok": true}
+{"png": "amount_000.png", "type": "amount", "golden": "65098.0", "mode": "plain", "got": "6,509.80", "ok": false}
+{"png": "amount_000.png", "type": "amount", "golden": "65098.0", "mode": "domain", "got": "6,509.80", "ok": false}
+{"png": "amount_001.png", "type": "amount", "golden": "123224.0", "mode": "plain", "got": "123224.0", "ok": true}
+{"png": "amount_001.png", "type": "amount", "golden": "123224.0", "mode": "domain", "got": "123224.0", "ok": true}
+{"png": "amount_002.png", "type": "amount", "golden": "27.4", "mode": "plain", "got": "27.4", "ok": true}
+{"png": "amount_002.png", "type": "amount", "golden": "27.4", "mode": "domain", "got": "27.4", "ok": true}
+{"png": "amount_003.png", "type": "amount", "golden": "40", "mode": "plain", "got": "40", "ok": true}
+{"png": "amount_003.png", "type": "amount", "golden": "40", "mode": "domain", "got": "40", "ok": true}
+{"png": "amount_004.png", "type": "amount", "golden": "54", "mode": "plain", "got": "54", "ok": true}
+{"png": "amount_004.png", "type": "amount", "golden": "54", "mode": "domain", "got": "54", "ok": true}
+{"png": "amount_005.png", "type": "amount", "golden": "22640.6", "mode": "plain", "got": "22640.6", "ok": true}
+{"png": "amount_005.png", "type": "amount", "golden": "22640.6", "mode": "domain", "got": "22640.6", "ok": true}
+{"png": "amount_006.png", "type": "amount", "golden": "78", "mode": "plain", "got": "78", "ok": true}
+{"png": "amount_006.png", "type": "amount", "golden": "78", "mode": "domain", "got": "78", "ok": true}
+{"png": "amount_007.png", "type": "amount", "golden": "124904.8", "mode": "plain", "got": "124904.", "ok": false}
+{"png": "amount_007.png", "type": "amount", "golden": "124904.8", "mode": "domain", "got": "124904.", "ok": false}
+{"png": "amount_008.png", "type": "amount", "golden": "47", "mode": "plain", "got": "47", "ok": true}
+{"png": "amount_008.png", "type": "amount", "golden": "47", "mode": "domain", "got": "47", "ok": true}
+{"png": "amount_009.png", "type": "amount", "golden": "42", "mode": "plain", "got": "42", "ok": true}
+{"png": "amount_009.png", "type": "amount", "golden": "42", "mode": "domain", "got": "42", "ok": true}
+{"png": "amount_010.png", "type": "amount", "golden": "43509.4", "mode": "plain", "got": "43509.4", "ok": true}
+{"png": "amount_010.png", "type": "amount", "golden": "43509.4", "mode": "domain", "got": "43509.4", "ok": true}
+{"png": "amount_011.png", "type": "amount", "golden": "97", "mode": "plain", "got": "97", "ok": true}
+{"png": "amount_011.png", "type": "amount", "golden": "97", "mode": "domain", "got": "97", "ok": true}
+{"png": "amount_012.png", "type": "amount", "golden": "177", "mode": "plain", "got": "177", "ok": true}
+{"png": "amount_012.png", "type": "amount", "golden": "177", "mode": "domain", "got": "177", "ok": true}
+{"png": "amount_013.png", "type": "amount", "golden": "423.2", "mode": "plain", "got": "42.3.2", "ok": false}
+{"png": "amount_013.png", "type": "amount", "golden": "423.2", "mode": "domain", "got": "42.3.2", "ok": false}
+{"png": "amount_014.png", "type": "amount", "golden": "54551.6", "mode": "plain", "got": "54/55/1.6", "ok": false}
+{"png": "amount_014.png", "type": "amount", "golden": "54551.6", "mode": "domain", "got": "54/55/1.6", "ok": false}
+{"png": "amount_015.png", "type": "amount", "golden": "15.5", "mode": "plain", "got": "15.5", "ok": true}
+{"png": "amount_015.png", "type": "amount", "golden": "15.5", "mode": "domain", "got": "15.5", "ok": true}
+{"png": "amount_016.png", "type": "amount", "golden": "17147.6", "mode": "plain", "got": "17147.6", "ok": true}
+{"png": "amount_016.png", "type": "amount", "golden": "17147.6", "mode": "domain", "got": "17147.6", "ok": true}
+{"png": "amount_017.png", "type": "amount", "golden": "53", "mode": "plain", "got": "53", "ok": true}
+{"png": "amount_017.png", "type": "amount", "golden": "53", "mode": "domain", "got": "53", "ok": true}
+{"png": "amount_018.png", "type": "amount", "golden": "80.4", "mode": "plain", "got": "80.4", "ok": true}
+{"png": "amount_018.png", "type": "amount", "golden": "80.4", "mode": "domain", "got": "80.4", "ok": true}
+{"png": "amount_019.png", "type": "amount", "golden": "34", "mode": "plain", "got": "34", "ok": true}
+{"png": "amount_019.png", "type": "amount", "golden": "34", "mode": "domain", "got": "34", "ok": true}
+{"png": "amount_020.png", "type": "amount", "golden": "10.1", "mode": "plain", "got": "10.1", "ok": true}
+{"png": "amount_020.png", "type": "amount", "golden": "10.1", "mode": "domain", "got": "10.1", "ok": true}
+{"png": "amount_021.png", "type": "amount", "golden": "118714.9", "mode": "plain", "got": "18714.9", "ok": false}
+{"png": "amount_021.png", "type": "amount", "golden": "118714.9", "mode": "domain", "got": "18714.9", "ok": false}
+{"png": "amount_022.png", "type": "amount", "golden": "19", "mode": "plain", "got": "19", "ok": true}
+{"png": "amount_022.png", "type": "amount", "golden": "19", "mode": "domain", "got": "19", "ok": true}
+{"png": "amount_023.png", "type": "amount", "golden": "1362.7", "mode": "plain", "got": "1362.7", "ok": true}
+{"png": "amount_023.png", "type": "amount", "golden": "1362.7", "mode": "domain", "got": "1362.7", "ok": true}
+{"png": "amount_024.png", "type": "amount", "golden": "290.5", "mode": "plain", "got": "290.5", "ok": true}
+{"png": "amount_024.png", "type": "amount", "golden": "290.5", "mode": "domain", "got": "290.5", "ok": true}
+{"png": "amount_025.png", "type": "amount", "golden": "41582.6", "mode": "plain", "got": "4/582.6", "ok": false}
+{"png": "amount_025.png", "type": "amount", "golden": "41582.6", "mode": "domain", "got": "41582.6", "ok": true}
+{"png": "amount_026.png", "type": "amount", "golden": "3", "mode": "plain", "got": "3", "ok": true}
+{"png": "amount_026.png", "type": "amount", "golden": "3", "mode": "domain", "got": "3", "ok": true}
+{"png": "amount_027.png", "type": "amount", "golden": "46676.1", "mode": "plain", "got": "46676.1", "ok": true}
+{"png": "amount_027.png", "type": "amount", "golden": "46676.1", "mode": "domain", "got": "46676.1", "ok": true}
+{"png": "amount_028.png", "type": "amount", "golden": "50", "mode": "plain", "got": "50", "ok": true}
+{"png": "amount_028.png", "type": "amount", "golden": "50", "mode": "domain", "got": "50", "ok": true}
+{"png": "amount_029.png", "type": "amount", "golden": "88", "mode": "plain", "got": "88", "ok": true}
+{"png": "amount_029.png", "type": "amount", "golden": "88", "mode": "domain", "got": "88", "ok": true}
+{"png": "amount_030.png", "type": "amount", "golden": "157650.9", "mode": "plain", "got": "157650.9", "ok": true}
+{"png": "amount_030.png", "type": "amount", "golden": "157650.9", "mode": "domain", "got": "157650.9", "ok": true}
+{"png": "amount_031.png", "type": "amount", "golden": "407.2", "mode": "plain", "got": "407.2", "ok": true}
+{"png": "amount_031.png", "type": "amount", "golden": "407.2", "mode": "domain", "got": "407.2", "ok": true}
+{"png": "amount_032.png", "type": "amount", "golden": "397.2", "mode": "plain", "got": "3923.4", "ok": false}
+{"png": "amount_032.png", "type": "amount", "golden": "397.2", "mode": "domain", "got": "392.34", "ok": false}
+{"png": "amount_033.png", "type": "amount", "golden": "175281.5", "mode": "plain", "got": "Y 5281.5", "ok": false}
+{"png": "amount_033.png", "type": "amount", "golden": "175281.5", "mode": "domain", "got": "75281.5", "ok": false}
+{"png": "amount_034.png", "type": "amount", "golden": "86", "mode": "plain", "got": "86", "ok": true}
+{"png": "amount_034.png", "type": "amount", "golden": "86", "mode": "domain", "got": "86", "ok": true}
+{"png": "amount_035.png", "type": "amount", "golden": "171370.6", "mode": "plain", "got": "17137.0", "ok": false}
+{"png": "amount_035.png", "type": "amount", "golden": "171370.6", "mode": "domain", "got": "17137.0", "ok": false}
+{"png": "amount_036.png", "type": "amount", "golden": "17085.0", "mode": "plain", "got": "17085.0", "ok": true}
+{"png": "amount_036.png", "type": "amount", "golden": "17085.0", "mode": "domain", "got": "17085.0", "ok": true}
+{"png": "amount_037.png", "type": "amount", "golden": "31.6", "mode": "plain", "got": "31.6", "ok": true}
+{"png": "amount_037.png", "type": "amount", "golden": "31.6", "mode": "domain", "got": "31.6", "ok": true}
+{"png": "amount_038.png", "type": "amount", "golden": "103793.4", "mode": "plain", "got": "103793.", "ok": false}
+{"png": "amount_038.png", "type": "amount", "golden": "103793.4", "mode": "domain", "got": "103793.", "ok": false}
+{"png": "amount_039.png", "type": "amount", "golden": "43", "mode": "plain", "got": "43", "ok": true}
+{"png": "amount_039.png", "type": "amount", "golden": "43", "mode": "domain", "got": "43", "ok": true}
+{"png": "amount_040.png", "type": "amount", "golden": "28", "mode": "plain", "got": "28", "ok": true}
+{"png": "amount_040.png", "type": "amount", "golden": "28", "mode": "domain", "got": "28", "ok": true}
+{"png": "amount_041.png", "type": "amount", "golden": "125644.5", "mode": "plain", "got": "125644.5", "ok": true}
+{"png": "amount_041.png", "type": "amount", "golden": "125644.5", "mode": "domain", "got": "125644.5", "ok": true}
+{"png": "amount_042.png", "type": "amount", "golden": "289.2", "mode": "plain", "got": "289.18", "ok": false}
+{"png": "amount_042.png", "type": "amount", "golden": "289.2", "mode": "domain", "got": "289.18", "ok": false}
+{"png": "amount_043.png", "type": "amount", "golden": "75", "mode": "plain", "got": "75", "ok": true}
+{"png": "amount_043.png", "type": "amount", "golden": "75", "mode": "domain", "got": "75", "ok": true}
+{"png": "amount_044.png", "type": "amount", "golden": "33893.3", "mode": "plain", "got": "30893.3", "ok": false}
+{"png": "amount_044.png", "type": "amount", "golden": "33893.3", "mode": "domain", "got": "30893.3", "ok": false}
+{"png": "amount_045.png", "type": "amount", "golden": "46.3", "mode": "plain", "got": "46.3", "ok": true}
+{"png": "amount_045.png", "type": "amount", "golden": "46.3", "mode": "domain", "got": "46.3", "ok": true}
+{"png": "amount_046.png", "type": "amount", "golden": "7756.7", "mode": "plain", "got": "7756.", "ok": false}
+{"png": "amount_046.png", "type": "amount", "golden": "7756.7", "mode": "domain", "got": "7756", "ok": false}
+{"png": "amount_047.png", "type": "amount", "golden": "26116.5", "mode": "plain", "got": "26/16.8", "ok": false}
+{"png": "amount_047.png", "type": "amount", "golden": "26116.5", "mode": "domain", "got": "26116.8", "ok": false}
+{"png": "amount_048.png", "type": "amount", "golden": "182524.5", "mode": "plain", "got": "1825R4.5", "ok": false}
+{"png": "amount_048.png", "type": "amount", "golden": "182524.5", "mode": "domain", "got": "1825R4.5", "ok": false}
+{"png": "amount_049.png", "type": "amount", "golden": "11", "mode": "plain", "got": "//", "ok": false}
+{"png": "amount_049.png", "type": "amount", "golden": "11", "mode": "domain", "got": "11", "ok": true}
+{"png": "amount_050.png", "type": "amount", "golden": "32", "mode": "plain", "got": "32", "ok": true}
+{"png": "amount_050.png", "type": "amount", "golden": "32", "mode": "domain", "got": "32", "ok": true}
+{"png": "amount_051.png", "type": "amount", "golden": "97", "mode": "plain", "got": "97", "ok": true}
+{"png": "amount_051.png", "type": "amount", "golden": "97", "mode": "domain", "got": "97", "ok": true}
+{"png": "amount_052.png", "type": "amount", "golden": "5.0", "mode": "plain", "got": "5.0", "ok": true}
+{"png": "amount_052.png", "type": "amount", "golden": "5.0", "mode": "domain", "got": "5.0", "ok": true}
+{"png": "amount_053.png", "type": "amount", "golden": "39983.3", "mode": "plain", "got": "39983.3", "ok": true}
+{"png": "amount_053.png", "type": "amount", "golden": "39983.3", "mode": "domain", "got": "39983.3", "ok": true}
+{"png": "amount_054.png", "type": "amount", "golden": "65135.8", "mode": "plain", "got": "65135.8", "ok": true}
+{"png": "amount_054.png", "type": "amount", "golden": "65135.8", "mode": "domain", "got": "65135.8", "ok": true}
+{"png": "amount_055.png", "type": "amount", "golden": "26", "mode": "plain", "got": "26", "ok": true}
+{"png": "amount_055.png", "type": "amount", "golden": "26", "mode": "domain", "got": "26", "ok": true}
+{"png": "amount_056.png", "type": "amount", "golden": "48", "mode": "plain", "got": "48", "ok": true}
+{"png": "amount_056.png", "type": "amount", "golden": "48", "mode": "domain", "got": "48", "ok": true}
+{"png": "amount_057.png", "type": "amount", "golden": "35", "mode": "plain", "got": "25", "ok": false}
+{"png": "amount_057.png", "type": "amount", "golden": "35", "mode": "domain", "got": "25", "ok": false}
+{"png": "amount_058.png", "type": "amount", "golden": "114", "mode": "plain", "got": "1134", "ok": false}
+{"png": "amount_058.png", "type": "amount", "golden": "114", "mode": "domain", "got": "114", "ok": true}
+{"png": "amount_059.png", "type": "amount", "golden": "64", "mode": "plain", "got": "64", "ok": true}
+{"png": "amount_059.png", "type": "amount", "golden": "64", "mode": "domain", "got": "64", "ok": true}
+{"png": "code_000.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_000.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_001.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_001.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_002.png", "type": "code", "golden": "PNT1", "mode": "plain", "got": "PNTI", "ok": false}
+{"png": "code_002.png", "type": "code", "golden": "PNT1", "mode": "domain", "got": "PNT1", "ok": true}
+{"png": "code_003.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_003.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_004.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_004.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_005.png", "type": "code", "golden": "Y", "mode": "plain", "got": "y", "ok": true}
+{"png": "code_005.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_006.png", "type": "code", "golden": "l", "mode": "plain", "got": "1", "ok": false}
+{"png": "code_006.png", "type": "code", "golden": "l", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_007.png", "type": "code", "golden": "F", "mode": "plain", "got": "F", "ok": true}
+{"png": "code_007.png", "type": "code", "golden": "F", "mode": "domain", "got": "F", "ok": true}
+{"png": "code_008.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_008.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_009.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_009.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_010.png", "type": "code", "golden": "S", "mode": "plain", "got": "S", "ok": true}
+{"png": "code_010.png", "type": "code", "golden": "S", "mode": "domain", "got": "S", "ok": true}
+{"png": "code_011.png", "type": "code", "golden": "C", "mode": "plain", "got": "C", "ok": true}
+{"png": "code_011.png", "type": "code", "golden": "C", "mode": "domain", "got": "C", "ok": true}
+{"png": "code_012.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_012.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_013.png", "type": "code", "golden": "F", "mode": "plain", "got": "F", "ok": true}
+{"png": "code_013.png", "type": "code", "golden": "F", "mode": "domain", "got": "F", "ok": true}
+{"png": "code_014.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_014.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_015.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_015.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_016.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_016.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_017.png", "type": "code", "golden": "OPV0", "mode": "plain", "got": "OPVO", "ok": false}
+{"png": "code_017.png", "type": "code", "golden": "OPV0", "mode": "domain", "got": "OPV0", "ok": true}
+{"png": "code_018.png", "type": "code", "golden": "Y", "mode": "plain", "got": "y", "ok": true}
+{"png": "code_018.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_019.png", "type": "code", "golden": "M", "mode": "plain", "got": "M", "ok": true}
+{"png": "code_019.png", "type": "code", "golden": "M", "mode": "domain", "got": "M", "ok": true}
+{"png": "code_020.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_020.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_021.png", "type": "code", "golden": "P", "mode": "plain", "got": "P", "ok": true}
+{"png": "code_021.png", "type": "code", "golden": "P", "mode": "domain", "got": "P", "ok": true}
+{"png": "code_022.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_022.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_023.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_023.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_024.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_024.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_025.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_025.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_026.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_026.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_027.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_027.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_028.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_028.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_029.png", "type": "code", "golden": "N", "mode": "plain", "got": "n", "ok": true}
+{"png": "code_029.png", "type": "code", "golden": "N", "mode": "domain", "got": "N", "ok": true}
+{"png": "code_030.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_030.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_031.png", "type": "code", "golden": "M", "mode": "plain", "got": "M", "ok": true}
+{"png": "code_031.png", "type": "code", "golden": "M", "mode": "domain", "got": "M", "ok": true}
+{"png": "code_032.png", "type": "code", "golden": "P", "mode": "plain", "got": "P", "ok": true}
+{"png": "code_032.png", "type": "code", "golden": "P", "mode": "domain", "got": "P", "ok": true}
+{"png": "code_033.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_033.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_034.png", "type": "code", "golden": "A", "mode": "plain", "got": "^", "ok": false}
+{"png": "code_034.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_035.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_035.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_036.png", "type": "code", "golden": "A", "mode": "plain", "got": "84", "ok": false}
+{"png": "code_036.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_037.png", "type": "code", "golden": "M", "mode": "plain", "got": "M", "ok": true}
+{"png": "code_037.png", "type": "code", "golden": "M", "mode": "domain", "got": "M", "ok": true}
+{"png": "code_038.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_038.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_039.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_039.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_040.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_040.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_041.png", "type": "code", "golden": "l", "mode": "plain", "got": "/", "ok": false}
+{"png": "code_041.png", "type": "code", "golden": "l", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_042.png", "type": "code", "golden": "BCG", "mode": "plain", "got": "BCG", "ok": true}
+{"png": "code_042.png", "type": "code", "golden": "BCG", "mode": "domain", "got": "BCG", "ok": true}
+{"png": "code_043.png", "type": "code", "golden": "BCG", "mode": "plain", "got": "BCG", "ok": true}
+{"png": "code_043.png", "type": "code", "golden": "BCG", "mode": "domain", "got": "BCG", "ok": true}
+{"png": "code_044.png", "type": "code", "golden": "M", "mode": "plain", "got": "m", "ok": true}
+{"png": "code_044.png", "type": "code", "golden": "M", "mode": "domain", "got": "M", "ok": true}
+{"png": "code_045.png", "type": "code", "golden": "L", "mode": "plain", "got": "<", "ok": false}
+{"png": "code_045.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_046.png", "type": "code", "golden": "E", "mode": "plain", "got": "E", "ok": true}
+{"png": "code_046.png", "type": "code", "golden": "E", "mode": "domain", "got": "E", "ok": true}
+{"png": "code_047.png", "type": "code", "golden": "F", "mode": "plain", "got": "F", "ok": true}
+{"png": "code_047.png", "type": "code", "golden": "F", "mode": "domain", "got": "F", "ok": true}
+{"png": "code_048.png", "type": "code", "golden": "B", "mode": "plain", "got": "B", "ok": true}
+{"png": "code_048.png", "type": "code", "golden": "B", "mode": "domain", "got": "B", "ok": true}
+{"png": "code_049.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_049.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "code_050.png", "type": "code", "golden": "P", "mode": "plain", "got": "\u03c1", "ok": false}
+{"png": "code_050.png", "type": "code", "golden": "P", "mode": "domain", "got": "P", "ok": true}
+{"png": "code_051.png", "type": "code", "golden": "Y", "mode": "plain", "got": "Y", "ok": true}
+{"png": "code_051.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_052.png", "type": "code", "golden": "E", "mode": "plain", "got": "E", "ok": true}
+{"png": "code_052.png", "type": "code", "golden": "E", "mode": "domain", "got": "E", "ok": true}
+{"png": "code_053.png", "type": "code", "golden": "P", "mode": "plain", "got": "P", "ok": true}
+{"png": "code_053.png", "type": "code", "golden": "P", "mode": "domain", "got": "P", "ok": true}
+{"png": "code_054.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_054.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_055.png", "type": "code", "golden": "N", "mode": "plain", "got": "n", "ok": true}
+{"png": "code_055.png", "type": "code", "golden": "N", "mode": "domain", "got": "N", "ok": true}
+{"png": "code_056.png", "type": "code", "golden": "A", "mode": "plain", "got": "A", "ok": true}
+{"png": "code_056.png", "type": "code", "golden": "A", "mode": "domain", "got": "A", "ok": true}
+{"png": "code_057.png", "type": "code", "golden": "SST", "mode": "plain", "got": "SST", "ok": true}
+{"png": "code_057.png", "type": "code", "golden": "SST", "mode": "domain", "got": "SST", "ok": true}
+{"png": "code_058.png", "type": "code", "golden": "Y", "mode": "plain", "got": "y", "ok": true}
+{"png": "code_058.png", "type": "code", "golden": "Y", "mode": "domain", "got": "Y", "ok": true}
+{"png": "code_059.png", "type": "code", "golden": "L", "mode": "plain", "got": "L", "ok": true}
+{"png": "code_059.png", "type": "code", "golden": "L", "mode": "domain", "got": "L", "ok": true}
+{"png": "text_000.png", "type": "text", "golden": "no stock", "mode": "plain", "got": "no stock", "ok": true}
+{"png": "text_000.png", "type": "text", "golden": "no stock", "mode": "domain", "got": "no stock", "ok": true}
+{"png": "text_001.png", "type": "text", "golden": "dressing done", "mode": "plain", "got": "dressing done", "ok": true}
+{"png": "text_001.png", "type": "text", "golden": "dressing done", "mode": "domain", "got": "dressing done", "ok": true}
+{"png": "text_002.png", "type": "text", "golden": "ORS given", "mode": "plain", "got": "ORS given", "ok": true}
+{"png": "text_002.png", "type": "text", "golden": "ORS given", "mode": "domain", "got": "ORS given", "ok": true}
+{"png": "text_003.png", "type": "text", "golden": "no stock", "mode": "plain", "got": "no stock", "ok": true}
+{"png": "text_003.png", "type": "text", "golden": "no stock", "mode": "domain", "got": "no stock", "ok": true}
+{"png": "text_004.png", "type": "text", "golden": "cowpea", "mode": "plain", "got": "cowpea", "ok": true}
+{"png": "text_004.png", "type": "text", "golden": "cowpea", "mode": "domain", "got": "cowpea", "ok": true}
+{"png": "text_005.png", "type": "text", "golden": "referred district", "mode": "plain", "got": "referred district", "ok": true}
+{"png": "text_005.png", "type": "text", "golden": "referred district", "mode": "domain", "got": "referred district", "ok": true}
+{"png": "text_006.png", "type": "text", "golden": "return if worse", "mode": "plain", "got": "return if worse", "ok": true}
+{"png": "text_006.png", "type": "text", "golden": "return if worse", "mode": "domain", "got": "return if worse", "ok": true}
+{"png": "text_007.png", "type": "text", "golden": "absent exam", "mode": "plain", "got": "absent exam", "ok": true}
+{"png": "text_007.png", "type": "text", "golden": "absent exam", "mode": "domain", "got": "absent exam", "ok": true}
+{"png": "text_008.png", "type": "text", "golden": "left mid term", "mode": "plain", "got": "left mid term", "ok": true}
+{"png": "text_008.png", "type": "text", "golden": "left mid term", "mode": "domain", "got": "left mid term", "ok": true}
+{"png": "text_009.png", "type": "text", "golden": "irregular", "mode": "plain", "got": "\u00bfrregular", "ok": false}
+{"png": "text_009.png", "type": "text", "golden": "irregular", "mode": "domain", "got": "\u00bfrregular", "ok": false}
+{"png": "text_010.png", "type": "text", "golden": "counselled", "mode": "plain", "got": "counselled", "ok": true}
+{"png": "text_010.png", "type": "text", "golden": "counselled", "mode": "domain", "got": "counselled", "ok": true}
+{"png": "text_011.png", "type": "text", "golden": "dairy", "mode": "plain", "got": "dairy", "ok": true}
+{"png": "text_011.png", "type": "text", "golden": "dairy", "mode": "domain", "got": "dairy", "ok": true}
+{"png": "text_012.png", "type": "text", "golden": "finger millet", "mode": "plain", "got": "finger millet", "ok": true}
+{"png": "text_012.png", "type": "text", "golden": "finger millet", "mode": "domain", "got": "finger millet", "ok": true}
+{"png": "text_013.png", "type": "text", "golden": "ANC card updated", "mode": "plain", "got": "ANC card updated", "ok": true}
+{"png": "text_013.png", "type": "text", "golden": "ANC card updated", "mode": "domain", "got": "ANC card updated", "ok": true}
+{"png": "text_014.png", "type": "text", "golden": "fishing net", "mode": "plain", "got": "fishing net", "ok": true}
+{"png": "text_014.png", "type": "text", "golden": "fishing net", "mode": "domain", "got": "fishing net", "ok": true}
+{"png": "text_015.png", "type": "text", "golden": "retest due", "mode": "plain", "got": "rotact due", "ok": false}
+{"png": "text_015.png", "type": "text", "golden": "retest due", "mode": "domain", "got": "rotact due", "ok": false}
+{"png": "text_016.png", "type": "text", "golden": "left mid term", "mode": "plain", "got": "left mid term", "ok": true}
+{"png": "text_016.png", "type": "text", "golden": "left mid term", "mode": "domain", "got": "left mid term", "ok": true}
+{"png": "text_017.png", "type": "text", "golden": "medicine given", "mode": "plain", "got": "medicine gi", "ok": false}
+{"png": "text_017.png", "type": "text", "golden": "medicine given", "mode": "domain", "got": "medicine gi", "ok": false}
+{"png": "text_018.png", "type": "text", "golden": "onion", "mode": "plain", "got": "onion", "ok": true}
+{"png": "text_018.png", "type": "text", "golden": "onion", "mode": "domain", "got": "onion", "ok": true}
+{"png": "text_019.png", "type": "text", "golden": "referred CHC", "mode": "plain", "got": "referred CHC", "ok": true}
+{"png": "text_019.png", "type": "text", "golden": "referred CHC", "mode": "domain", "got": "referred CHC", "ok": true}
+{"png": "text_020.png", "type": "text", "golden": "dressing done", "mode": "plain", "got": "dressing done", "ok": true}
+{"png": "text_020.png", "type": "text", "golden": "dressing done", "mode": "domain", "got": "dressing done", "ok": true}
+{"png": "text_021.png", "type": "text", "golden": "Pheloran", "mode": "plain", "got": "Phelorn", "ok": false}
+{"png": "text_021.png", "type": "text", "golden": "Pheloran", "mode": "domain", "got": "Phelorn", "ok": false}
+{"png": "text_022.png", "type": "text", "golden": "follow up 3 days", "mode": "plain", "got": "follow up 3 days", "ok": true}
+{"png": "text_022.png", "type": "text", "golden": "follow up 3 days", "mode": "domain", "got": "follow up 3 days", "ok": true}
+{"png": "text_023.png", "type": "text", "golden": "ORS given", "mode": "plain", "got": "ORS given", "ok": true}
+{"png": "text_023.png", "type": "text", "golden": "ORS given", "mode": "domain", "got": "ORS given", "ok": true}
+{"png": "text_024.png", "type": "text", "golden": "no stock", "mode": "plain", "got": "no stock", "ok": true}
+{"png": "text_024.png", "type": "text", "golden": "no stock", "mode": "domain", "got": "no stock", "ok": true}
+{"png": "text_025.png", "type": "text", "golden": "needs help", "mode": "plain", "got": "needs help", "ok": true}
+{"png": "text_025.png", "type": "text", "golden": "needs help", "mode": "domain", "got": "needs help", "ok": true}
+{"png": "text_026.png", "type": "text", "golden": "advised rest", "mode": "plain", "got": "advised rest", "ok": true}
+{"png": "text_026.png", "type": "text", "golden": "advised rest", "mode": "domain", "got": "advised rest", "ok": true}
+{"png": "text_027.png", "type": "text", "golden": "no stock", "mode": "plain", "got": "no stock", "ok": true}
+{"png": "text_027.png", "type": "text", "golden": "no stock", "mode": "domain", "got": "no stock", "ok": true}
+{"png": "text_028.png", "type": "text", "golden": "retest due", "mode": "plain", "got": "retest due", "ok": true}
+{"png": "text_028.png", "type": "text", "golden": "retest due", "mode": "domain", "got": "retest due", "ok": true}
+{"png": "text_029.png", "type": "text", "golden": "no stock", "mode": "plain", "got": "no stock", "ok": true}
+{"png": "text_029.png", "type": "text", "golden": "no stock", "mode": "domain", "got": "no stock", "ok": true}
+{"png": "text_030.png", "type": "text", "golden": "needs help", "mode": "plain", "got": "needs help", "ok": true}
+{"png": "text_030.png", "type": "text", "golden": "needs help", "mode": "domain", "got": "needs help", "ok": true}
+{"png": "text_031.png", "type": "text", "golden": "return if worse", "mode": "plain", "got": "return if worse", "ok": true}
+{"png": "text_031.png", "type": "text", "golden": "return if worse", "mode": "domain", "got": "return if worse", "ok": true}
+{"png": "text_032.png", "type": "text", "golden": "cycle repair shop", "mode": "plain", "got": "cycle repair shop", "ok": true}
+{"png": "text_032.png", "type": "text", "golden": "cycle repair shop", "mode": "domain", "got": "cycle repair shop", "ok": true}
+{"png": "text_033.png", "type": "text", "golden": "vaccine deferred", "mode": "plain", "got": "Vaccine deferred", "ok": true}
+{"png": "text_033.png", "type": "text", "golden": "vaccine deferred", "mode": "domain", "got": "Vaccine deferred", "ok": true}
+{"png": "text_034.png", "type": "text", "golden": "blood test advised", "mode": "plain", "got": "blood test advised", "ok": true}
+{"png": "text_034.png", "type": "text", "golden": "blood test advised", "mode": "domain", "got": "blood test advised", "ok": true}
+{"png": "text_035.png", "type": "text", "golden": "follow up 3 days", "mode": "plain", "got": "follow up 3 days", "ok": true}
+{"png": "text_035.png", "type": "text", "golden": "follow up 3 days", "mode": "domain", "got": "follow up 3 days", "ok": true}
+{"png": "text_036.png", "type": "text", "golden": "retest due", "mode": "plain", "got": "retact due", "ok": false}
+{"png": "text_036.png", "type": "text", "golden": "retest due", "mode": "domain", "got": "retact due", "ok": false}
+{"png": "text_037.png", "type": "text", "golden": "absent exam", "mode": "plain", "got": "absent exam", "ok": true}
+{"png": "text_037.png", "type": "text", "golden": "absent exam", "mode": "domain", "got": "absent exam", "ok": true}
+{"png": "text_038.png", "type": "text", "golden": "loose motions", "mode": "plain", "got": "loose motions", "ok": true}
+{"png": "text_038.png", "type": "text", "golden": "loose motions", "mode": "domain", "got": "loose motions", "ok": true}
+{"png": "text_039.png", "type": "text", "golden": "groundnut", "mode": "plain", "got": "aroundnut", "ok": false}
+{"png": "text_039.png", "type": "text", "golden": "groundnut", "mode": "domain", "got": "aroundnut", "ok": false}
+{"png": "text_040.png", "type": "text", "golden": "good progress", "mode": "plain", "got": "good progress", "ok": true}
+{"png": "text_040.png", "type": "text", "golden": "good progress", "mode": "domain", "got": "good progress", "ok": true}
+{"png": "text_041.png", "type": "text", "golden": "cowpea", "mode": "plain", "got": "cowpea", "ok": true}
+{"png": "text_041.png", "type": "text", "golden": "cowpea", "mode": "domain", "got": "cowpea", "ok": true}
+{"png": "text_042.png", "type": "text", "golden": "follow up 3 days", "mode": "plain", "got": "follow up 3 days", "ok": true}
+{"png": "text_042.png", "type": "text", "golden": "follow up 3 days", "mode": "domain", "got": "follow up 3 days", "ok": true}
+{"png": "text_043.png", "type": "text", "golden": "dairy", "mode": "plain", "got": "dairy", "ok": true}
+{"png": "text_043.png", "type": "text", "golden": "dairy", "mode": "domain", "got": "dairy", "ok": true}
+{"png": "text_044.png", "type": "text", "golden": "referred CHC", "mode": "plain", "got": "referred CHC", "ok": true}
+{"png": "text_044.png", "type": "text", "golden": "referred CHC", "mode": "domain", "got": "referred CHC", "ok": true}
+{"png": "text_045.png", "type": "text", "golden": "goat rearing", "mode": "plain", "got": "goat rearing", "ok": true}
+{"png": "text_045.png", "type": "text", "golden": "goat rearing", "mode": "domain", "got": "goat rearing", "ok": true}
+{"png": "text_046.png", "type": "text", "golden": "ORS given", "mode": "plain", "got": "ORS given", "ok": true}
+{"png": "text_046.png", "type": "text", "golden": "ORS given", "mode": "domain", "got": "ORS given", "ok": true}
+{"png": "text_047.png", "type": "text", "golden": "follow up 3 days", "mode": "plain", "got": "follow up 3 days", "ok": true}
+{"png": "text_047.png", "type": "text", "golden": "follow up 3 days", "mode": "domain", "got": "follow up 3 days", "ok": true}
+{"png": "text_048.png", "type": "text", "golden": "parent meeting", "mode": "plain", "got": "parent meeting", "ok": true}
+{"png": "text_048.png", "type": "text", "golden": "parent meeting", "mode": "domain", "got": "parent meeting", "ok": true}
+{"png": "text_049.png", "type": "text", "golden": "ORS given", "mode": "plain", "got": "SRS given", "ok": false}
+{"png": "text_049.png", "type": "text", "golden": "ORS given", "mode": "domain", "got": "SRS given", "ok": false}
+{"png": "text_050.png", "type": "text", "golden": "house repair", "mode": "plain", "got": "house repair", "ok": true}
+{"png": "text_050.png", "type": "text", "golden": "house repair", "mode": "domain", "got": "house repair", "ok": true}
+{"png": "text_051.png", "type": "text", "golden": "medicine given", "mode": "plain", "got": "medicine given", "ok": true}
+{"png": "text_051.png", "type": "text", "golden": "medicine given", "mode": "domain", "got": "medicine given", "ok": true}
+{"png": "text_052.png", "type": "text", "golden": "allergy", "mode": "plain", "got": "allergy", "ok": true}
+{"png": "text_052.png", "type": "text", "golden": "allergy", "mode": "domain", "got": "allergy", "ok": true}
+{"png": "text_053.png", "type": "text", "golden": "ORS given", "mode": "plain", "got": "OKs given", "ok": false}
+{"png": "text_053.png", "type": "text", "golden": "ORS given", "mode": "domain", "got": "OKs given", "ok": false}
+{"png": "text_054.png", "type": "text", "golden": "blood test advised", "mode": "plain", "got": "blood test advised", "ok": true}
+{"png": "text_054.png", "type": "text", "golden": "blood test advised", "mode": "domain", "got": "blood test advised", "ok": true}
+{"png": "text_055.png", "type": "text", "golden": "absent exam", "mode": "plain", "got": "absent exam", "ok": true}
+{"png": "text_055.png", "type": "text", "golden": "absent exam", "mode": "domain", "got": "absent exam", "ok": true}
+{"png": "text_056.png", "type": "text", "golden": "good progress", "mode": "plain", "got": "good progress", "ok": true}
+{"png": "text_056.png", "type": "text", "golden": "good progress", "mode": "domain", "got": "good progress", "ok": true}
+{"png": "text_057.png", "type": "text", "golden": "dressing done", "mode": "plain", "got": "dressing done", "ok": true}
+{"png": "text_057.png", "type": "text", "golden": "dressing done", "mode": "domain", "got": "dressing done", "ok": true}
+{"png": "text_058.png", "type": "text", "golden": "weed problem", "mode": "plain", "got": "weed problem", "ok": true}
+{"png": "text_058.png", "type": "text", "golden": "weed problem", "mode": "domain", "got": "weed problem", "ok": true}
+{"png": "text_059.png", "type": "text", "golden": "TB follow-up", "mode": "plain", "got": "V", "ok": false}
+{"png": "text_059.png", "type": "text", "golden": "TB follow-up", "mode": "domain", "got": "DV", "ok": false}

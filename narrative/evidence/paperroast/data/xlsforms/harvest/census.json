@@ -1,0 +1,772 @@
+[
+  {
+    "file": "getodk__xlsform-template__ODK XLSForm Template.xlsx",
+    "error": null,
+    "questions": 0,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 0,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "too little paper-mappable content"
+    ],
+    "repo": "getodk/xlsform-template",
+    "path": "ODK XLSForm Template.xlsx",
+    "size": 227776
+  },
+  {
+    "file": "XLSForm__pyxform__ODKValidateWarnings.xlsx",
+    "error": null,
+    "questions": 2,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 0,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "too little paper-mappable content"
+    ],
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/ODKValidateWarnings.xlsx",
+    "size": 9466
+  },
+  {
+    "file": "XLSForm__pyxform__UCL_Biomass_Plot_Form.xlsx",
+    "error": null,
+    "questions": 50,
+    "repeats": 5,
+    "max_repeat_depth": 2,
+    "repeat_cols": [
+      5,
+      11,
+      5,
+      5
+    ],
+    "select_one": 19,
+    "select_multiple": 1,
+    "media_geo": 4,
+    "skip_logic": 12,
+    "constraints": 4,
+    "cascading": 3,
+    "languages": 2,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "nested repeats",
+      "3 cascading selects (domains become context-dependent)"
+    ],
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/UCL_Biomass_Plot_Form.xlsx",
+    "size": 16325
+  },
+  {
+    "file": "XLSForm__pyxform__bad_calc.xlsx",
+    "error": null,
+    "questions": 0,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 0,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "too little paper-mappable content"
+    ],
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/bad_calc.xlsx",
+    "size": 23551
+  },
+  {
+    "file": "XLSForm__pyxform__badly_named_choices_sheet.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/badly_named_choices_sheet.xls",
+    "size": 24064
+  },
+  {
+    "file": "XLSForm__pyxform__blank_second_row.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/blank_second_row.xls",
+    "size": 7168
+  },
+  {
+    "file": "XLSForm__pyxform__calculate_without_calculation.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "XLSForm/pyxform",
+    "path": "tests/bug_example_xls/calculate_without_calculation.xls",
+    "size": 11776
+  },
+  {
+    "file": "stats4sd__xlsform_examples__Data Confirm Example.xlsx",
+    "error": null,
+    "questions": 7,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 3,
+    "select_multiple": 1,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "card",
+    "reasons": [
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "Data Confirmation Example/Data Confirm Example.xlsx",
+    "size": 15682
+  },
+  {
+    "file": "stats4sd__xlsform_examples__GoogleMapsLinkExample.xlsx",
+    "error": null,
+    "questions": 1,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "too little paper-mappable content"
+    ],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "Google Maps Link Example/GoogleMapsLinkExample.xlsx",
+    "size": 166875
+  },
+  {
+    "file": "stats4sd__xlsform_examples__Join two lists of answers together and repeat over them example.xlsx",
+    "error": null,
+    "questions": 4,
+    "repeats": 2,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      2,
+      1
+    ],
+    "select_one": 1,
+    "select_multiple": 1,
+    "media_geo": 0,
+    "skip_logic": 4,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "Join two lists of answers together and repeat over them example.xlsx",
+    "size": 16212
+  },
+  {
+    "file": "stats4sd__xlsform_examples__Multiple select choice filter example.xlsx",
+    "error": null,
+    "questions": 2,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      2
+    ],
+    "select_one": 0,
+    "select_multiple": 2,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 1,
+    "languages": 2,
+    "verdict": "register",
+    "reasons": [
+      "1 cascading selects (domains become context-dependent)"
+    ],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "Multiple select choice filter example.xlsx",
+    "size": 25279
+  },
+  {
+    "file": "stats4sd__xlsform_examples__ODK Form Template - with conditional formatting.xlsx",
+    "error": null,
+    "questions": 0,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      0
+    ],
+    "select_one": 0,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 2,
+    "verdict": "not_flattenable",
+    "reasons": [
+      "too little paper-mappable content"
+    ],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "ODK Form Template - with conditional formatting.xlsx",
+    "size": 70454
+  },
+  {
+    "file": "stats4sd__xlsform_examples__Repeat over not selcted options 2.xlsx",
+    "error": null,
+    "questions": 4,
+    "repeats": 2,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      0,
+      1
+    ],
+    "select_one": 2,
+    "select_multiple": 2,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "card",
+    "reasons": [
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "stats4sd/xlsform_examples",
+    "path": "Repeat over not selcted options 2.xlsx",
+    "size": 16014
+  },
+  {
+    "file": "bkkhiang__SurveyCTOBuilder360_HHRoster__SurveyCTO_Household_Roster_Basic_Repeat_Group_Template.xlsx",
+    "error": null,
+    "questions": 5,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      4
+    ],
+    "select_one": 2,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "bkkhiang/SurveyCTOBuilder360_HHRoster",
+    "path": "hh_basic_repeat_group/assets/SurveyCTO_Household_Roster_Basic_Repeat_Group_Template.xlsx",
+    "size": 151734
+  },
+  {
+    "file": "bkkhiang__SurveyCTOBuilder360_HHRoster__SurveyCTO_Household_Roster_Member_to_Head_Relationship_Validation.xlsx",
+    "error": null,
+    "questions": 6,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      5
+    ],
+    "select_one": 2,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 1,
+    "cascading": 0,
+    "languages": 2,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "bkkhiang/SurveyCTOBuilder360_HHRoster",
+    "path": "hh_indexed_repeat_group/Member-to-Head Relationship Validation/assets/SurveyCTO_Household_Roster_Member_to_Head_Relationship_Validation.xlsx",
+    "size": 159518
+  },
+  {
+    "file": "bkkhiang__SurveyCTOBuilder360_HHRoster__HouseholdRoster_IndexedRepeat.xlsx",
+    "error": null,
+    "questions": 6,
+    "repeats": 2,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      4,
+      2
+    ],
+    "select_one": 3,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 3,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "multi_region",
+    "reasons": [
+      "2 sibling repeat groups"
+    ],
+    "repo": "bkkhiang/SurveyCTOBuilder360_HHRoster",
+    "path": "hh_indexed_repeat_group/Pullling_head_name/assets/HouseholdRoster_IndexedRepeat.xlsx",
+    "size": 152726
+  },
+  {
+    "file": "bkkhiang__SurveyCTOBuilder360_HHRoster__SurveyCTO_Head_Driven_Skip_Logic.xlsx",
+    "error": null,
+    "questions": 6,
+    "repeats": 2,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      4,
+      2
+    ],
+    "select_one": 3,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 1,
+    "cascading": 0,
+    "languages": 2,
+    "verdict": "multi_region",
+    "reasons": [
+      "2 sibling repeat groups"
+    ],
+    "repo": "bkkhiang/SurveyCTOBuilder360_HHRoster",
+    "path": "hh_indexed_repeat_group/hh_Head_Driven_Skip_Logic/assets/SurveyCTO_Head_Driven_Skip_Logic.xlsx",
+    "size": 156692
+  },
+  {
+    "file": "bkkhiang__SurveyCTOBuilder360_HHRoster__SurveyCTO_Household_Roster_Head_Education_Module.xlsx",
+    "error": null,
+    "questions": 5,
+    "repeats": 2,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      2,
+      2
+    ],
+    "select_one": 2,
+    "select_multiple": 1,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 2,
+    "verdict": "multi_region",
+    "reasons": [
+      "2 sibling repeat groups"
+    ],
+    "repo": "bkkhiang/SurveyCTOBuilder360_HHRoster",
+    "path": "hh_indexed_repeat_group/hh_Head_Education_Module/assets/SurveyCTO_Household_Roster_Head_Education_Module.xlsx",
+    "size": 155878
+  },
+  {
+    "file": "kobotoolbox__kobocat__tutorial.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "kobotoolbox/kobocat",
+    "path": "onadata/apps/api/tests/fixtures/forms/tutorial/tutorial.xls",
+    "size": 37888
+  },
+  {
+    "file": "kobotoolbox__kobocat__new_repeats.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "kobotoolbox/kobocat",
+    "path": "onadata/apps/logger/fixtures/new_repeats/new_repeats.xls",
+    "size": 21504
+  },
+  {
+    "file": "kobotoolbox__kobocat__survey_names.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "kobotoolbox/kobocat",
+    "path": "onadata/apps/logger/fixtures/test_forms/survey_names/survey_names.xls",
+    "size": 6656
+  },
+  {
+    "file": "kobotoolbox__kobocat__tutorial_arabic_labels.xls",
+    "error": "unreadable: InvalidFileException",
+    "verdict": "not_xlsform",
+    "repo": "kobotoolbox/kobocat",
+    "path": "onadata/apps/logger/fixtures/tutorial/tutorial_arabic_labels.xls",
+    "size": 8704
+  },
+  {
+    "file": "Edouard-Legoupil__kobocruncher__data.xlsx",
+    "error": "no survey sheet",
+    "verdict": "not_xlsform",
+    "repo": "Edouard-Legoupil/kobocruncher",
+    "path": "inst/data.xlsx",
+    "size": 10914
+  },
+  {
+    "file": "Edouard-Legoupil__kobocruncher__data_likert.xlsx",
+    "error": "no survey sheet",
+    "verdict": "not_xlsform",
+    "repo": "Edouard-Legoupil/kobocruncher",
+    "path": "inst/data_likert.xlsx",
+    "size": 13812
+  },
+  {
+    "file": "Edouard-Legoupil__kobocruncher__form_likert.xlsx",
+    "error": null,
+    "questions": 18,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 18,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "card",
+    "reasons": [
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "Edouard-Legoupil/kobocruncher",
+    "path": "inst/form_likert.xlsx",
+    "size": 26914
+  },
+  {
+    "file": "Edouard-Legoupil__kobocruncher__sample_xlsform.xlsx",
+    "error": null,
+    "questions": 8,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      2
+    ],
+    "select_one": 3,
+    "select_multiple": 1,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Edouard-Legoupil/kobocruncher",
+    "path": "inst/sample_xlsform.xlsx",
+    "size": 14200
+  },
+  {
+    "file": "Edouard-Legoupil__kobocruncher__sample_xlsform_with_plan.xlsx",
+    "error": "unreadable: KeyError",
+    "verdict": "not_xlsform",
+    "repo": "Edouard-Legoupil/kobocruncher",
+    "path": "inst/sample_xlsform_with_plan.xlsx",
+    "size": 49293
+  },
+  {
+    "file": "unhcr-americas__surveyDesigner__SurveyDesigner_Context.xlsx",
+    "error": "unreadable: ValueError",
+    "verdict": "not_xlsform",
+    "repo": "unhcr-americas/surveyDesigner",
+    "path": "inst/SurveyDesigner_Context.xlsx",
+    "size": 94478
+  },
+  {
+    "file": "unhcr-americas__surveyDesigner__SurveyDesigner_Referential.xlsx",
+    "error": null,
+    "questions": 199,
+    "repeats": 3,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      10,
+      70,
+      9
+    ],
+    "select_one": 145,
+    "select_multiple": 4,
+    "media_geo": 1,
+    "skip_logic": 159,
+    "constraints": 13,
+    "cascading": 11,
+    "languages": 0,
+    "verdict": "multi_region",
+    "reasons": [
+      "11 cascading selects (domains become context-dependent)",
+      "3 sibling repeat groups"
+    ],
+    "repo": "unhcr-americas/surveyDesigner",
+    "path": "inst/SurveyDesigner_Referential.xlsx",
+    "size": 95091
+  },
+  {
+    "file": "unhcr-americas__surveyDesigner__not_good_sheet.xlsx",
+    "error": "no survey sheet",
+    "verdict": "not_xlsform",
+    "repo": "unhcr-americas/surveyDesigner",
+    "path": "tests/testthat/not_good_sheet.xlsx",
+    "size": 107268
+  },
+  {
+    "file": "unhcr-americas__surveyDesigner__wt_xlsform_in_survey.xlsx",
+    "error": null,
+    "questions": 199,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 145,
+    "select_multiple": 4,
+    "media_geo": 1,
+    "skip_logic": 140,
+    "constraints": 13,
+    "cascading": 11,
+    "languages": 4,
+    "verdict": "card",
+    "reasons": [
+      "11 cascading selects (domains become context-dependent)",
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "unhcr-americas/surveyDesigner",
+    "path": "tests/testthat/wt_xlsform_in_survey.xlsx",
+    "size": 102104
+  },
+  {
+    "file": "palavido-dev__survey123-designer__example-grid-inventory.xlsx",
+    "error": null,
+    "questions": 26,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 14,
+    "select_multiple": 0,
+    "media_geo": 1,
+    "skip_logic": 1,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "card",
+    "reasons": [
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "palavido-dev/survey123-designer",
+    "path": "public/example-grid-inventory.xlsx",
+    "size": 7305
+  },
+  {
+    "file": "palavido-dev__survey123-designer__example-multipage-inspection.xlsx",
+    "error": null,
+    "questions": 22,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      2
+    ],
+    "select_one": 12,
+    "select_multiple": 1,
+    "media_geo": 3,
+    "skip_logic": 4,
+    "constraints": 1,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "palavido-dev/survey123-designer",
+    "path": "public/example-multipage-inspection.xlsx",
+    "size": 8365
+  },
+  {
+    "file": "palavido-dev__survey123-designer__test-form.xlsx",
+    "error": null,
+    "questions": 113,
+    "repeats": 6,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      9,
+      2,
+      10,
+      8,
+      9,
+      3
+    ],
+    "select_one": 41,
+    "select_multiple": 8,
+    "media_geo": 3,
+    "skip_logic": 45,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "multi_region",
+    "reasons": [
+      "6 sibling repeat groups"
+    ],
+    "repo": "palavido-dev/survey123-designer",
+    "path": "public/test-form.xlsx",
+    "size": 85869
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__Academic visits.xlsx",
+    "error": null,
+    "questions": 11,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      9
+    ],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/Academic visits.xlsx",
+    "size": 10747
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__Any other Information.xlsx",
+    "error": null,
+    "questions": 4,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      4
+    ],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 1,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/Any other Information.xlsx",
+    "size": 7231
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__Awards, Honours and Distinctions.xlsx",
+    "error": null,
+    "questions": 8,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      6
+    ],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/Awards, Honours and Distinctions.xlsx",
+    "size": 7138
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__CONFERENCES_ MEETINGS ORGANISED.xlsx",
+    "error": null,
+    "questions": 10,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      8
+    ],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/CONFERENCES_ MEETINGS ORGANISED.xlsx",
+    "size": 7295
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__Conferences _Workshops Attended.xlsx",
+    "error": null,
+    "questions": 9,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      7
+    ],
+    "select_one": 1,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/Conferences _Workshops Attended.xlsx",
+    "size": 7105
+  },
+  {
+    "file": "Ar5h71__XLS_to_MARKDOWN_REPORT__Courses Taught at TIFR.xlsx",
+    "error": null,
+    "questions": 7,
+    "repeats": 1,
+    "max_repeat_depth": 1,
+    "repeat_cols": [
+      5
+    ],
+    "select_one": 3,
+    "select_multiple": 0,
+    "media_geo": 0,
+    "skip_logic": 0,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 0,
+    "verdict": "register",
+    "reasons": [],
+    "repo": "Ar5h71/XLS_to_MARKDOWN_REPORT",
+    "path": "All forms in XLS format/Courses Taught at TIFR.xlsx",
+    "size": 7382
+  },
+  {
+    "file": "hjanesh__odk_survey_kunnamkulam__kkm_health_survey_alpha.xlsx",
+    "error": null,
+    "questions": 21,
+    "repeats": 0,
+    "max_repeat_depth": 0,
+    "repeat_cols": [],
+    "select_one": 4,
+    "select_multiple": 6,
+    "media_geo": 0,
+    "skip_logic": 7,
+    "constraints": 0,
+    "cascading": 0,
+    "languages": 1,
+    "verdict": "card",
+    "reasons": [
+      "no repeat group \u2014 card layout needed"
+    ],
+    "repo": "hjanesh/odk_survey_kunnamkulam",
+    "path": "kkm_health_survey_alpha.xlsx",
+    "size": 28307
+  }
+]
