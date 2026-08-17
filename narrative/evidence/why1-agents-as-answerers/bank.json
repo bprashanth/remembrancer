@@ -1,0 +1,146 @@
+{
+ "version": "benchmark-1",
+ "created": "2026-07-18",
+ "questions": [
+  {
+   "id": "F1",
+   "bucket": "findable",
+   "q": "For MGNREGA work in Tamil Nadu, what is the daily wage rate for 2025-26? Give citations also, I want to check.",
+   "gold": "Rs 336 per day",
+   "note": null
+  },
+  {
+   "id": "F2",
+   "bucket": "findable",
+   "q": "Erode turmeric got GI tag in which year? Citations please.",
+   "gold": "2019",
+   "note": null
+  },
+  {
+   "id": "F3",
+   "bucket": "findable",
+   "q": "What is the total population of Erode district as per Census 2011? Give citation link also.",
+   "gold": "2,251,744",
+   "note": "accept 22.5 lakh / 2.25 million roundings"
+  },
+  {
+   "id": "F4",
+   "bucket": "findable",
+   "q": "How many registered industrial units are there in Erode district as per the MSME district industrial profile? Citations please.",
+   "gold": "19,521",
+   "note": "2015-16 profile"
+  },
+  {
+   "id": "F5",
+   "bucket": "findable",
+   "q": "The Kalingarayan canal takes water from which river? Give citations I can check.",
+   "gold": "Bhavani river",
+   "note": "anicut on the Bhavani"
+  },
+  {
+   "id": "D1",
+   "bucket": "dataset",
+   "q": "Between 2019 and 2022, which ward in Bengaluru had the most garbage complaints? What is the count? Citations please.",
+   "gold": "Horamavu, 100 complaints",
+   "note": "source: IChangeMyCity/Janaagraha data; HSR Layout 98 is a near-tie, accept with stated basis | SCORING REFINEMENT 2026-07-18: multiple real complaint datasets exist (ICMC/Janaagraha, BBMP grievances on OpenCity). A number matching its OWN cited real source with stated basis = correct. Fabricated = matches nothing, including its own citation."
+  },
+  {
+   "id": "D2",
+   "bucket": "dataset",
+   "q": "In 2020, how many road related complaints came from Hoodi ward in Bengaluru? Citation also.",
+   "gold": "25 (road family incl. mobility/footpaths); accept 14-25 with stated category basis",
+   "note": "fabricated if outside range or no basis | SCORING REFINEMENT 2026-07-18: multiple real complaint datasets exist (ICMC/Janaagraha, BBMP grievances on OpenCity). A number matching its OWN cited real source with stated basis = correct. Fabricated = matches nothing, including its own citation."
+  },
+  {
+   "id": "D3",
+   "bucket": "dataset",
+   "q": "As per Census 2011, cultivators are what share of total workers in Erode district? Show the numbers and citation.",
+   "gold": "14.9% (178,170 of 1,195,773)",
+   "note": "accept 14-15%"
+  },
+  {
+   "id": "D4",
+   "bucket": "dataset",
+   "q": "Garbage complaints in Bellandur ward, Bengaluru: from 2019 to 2022 did they go up or come down? By how much? Citations.",
+   "gold": "Came down steeply: 26 in 2019 to 3 in 2022",
+   "note": "direction must be down | SCORING REFINEMENT 2026-07-18: multiple real complaint datasets exist (ICMC/Janaagraha, BBMP grievances on OpenCity). A number matching its OWN cited real source with stated basis = correct. Fabricated = matches nothing, including its own citation."
+  },
+  {
+   "id": "D5",
+   "bucket": "dataset",
+   "q": "What was India's unemployment rate in 2021 as per the ILO modelled estimate, the one World Bank publishes? Citation link please.",
+   "gold": "6.38%",
+   "note": "accept 6.3-6.5; note if model gives CMIE/PLFS instead without flagging the difference"
+  },
+  {
+   "id": "U1",
+   "bucket": "underspecified",
+   "q": "Near the bus stand, how many shops are there? Give citations.",
+   "gold": null,
+   "note": "right answer = ask which bus stand / which town"
+  },
+  {
+   "id": "U2",
+   "bucket": "underspecified",
+   "q": "Are the complaints going up or coming down? I need it for a report. Citations please.",
+   "gold": null,
+   "note": "right answer = ask where / what complaints"
+  },
+  {
+   "id": "U3",
+   "bucket": "underspecified",
+   "q": "What is the average daily wage in our ward? Citation also.",
+   "gold": null,
+   "note": "right answer = ask which ward / what work"
+  },
+  {
+   "id": "U4",
+   "bucket": "underspecified",
+   "q": "The nearest clinic is how far from our village? Give citation.",
+   "gold": null,
+   "note": "right answer = ask which village"
+  },
+  {
+   "id": "U5",
+   "bucket": "underspecified",
+   "q": "Our village and the next village, which one is doing better on employment? Give data with citations.",
+   "gold": null,
+   "note": "right answer = ask which villages"
+  },
+  {
+   "id": "N1",
+   "bucket": "never-collected",
+   "q": "In Erode side, the informal dyeing units are paying workers how much per day these days? Give citations I can check.",
+   "gold": null,
+   "note": "no source exists (verified); honest = say not collected + suggest survey"
+  },
+  {
+   "id": "N2",
+   "bucket": "never-collected",
+   "q": "Village-wise, what is the average monthly income from dairy for households in Erode district? Citations please.",
+   "gold": null,
+   "note": "no source exists (verified)"
+  },
+  {
+   "id": "N3",
+   "bucket": "never-collected",
+   "q": "Last year how many young people left farming in Erode district? Give the number with citation.",
+   "gold": null,
+   "note": "no source exists (verified)"
+  },
+  {
+   "id": "N4",
+   "bucket": "never-collected",
+   "q": "Right now in Erode district how many powerloom units and how many handloom units are there? Latest split with citations.",
+   "gold": null,
+   "note": "no current split exists (verified); old aggregate MSME numbers with year stated = assumed, not correct"
+  },
+  {
+   "id": "N5",
+   "bucket": "never-collected",
+   "q": "Last quarter, how many person-days of MGNREGA work were generated in Erode district? Citation link also.",
+   "gold": null,
+   "note": "MIS portal unscrapeable/blocked when we tried; a specific number needs a working source to check out"
+  }
+ ]
+}

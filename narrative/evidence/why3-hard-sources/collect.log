@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why3-hard-sources/collect_hard.py", line 9, in <module>
+    BANK = json.load(open(f"{HERE}/bank.json"))["questions"]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not str
+EXIT=1
+20 runs
+[claude-4.6-opus-high] H1r1: 104s len=2177
+[claude-4.6-opus-high] H2r1: 26s len=1164
+[claude-4.6-opus-high] H3r1: 42s len=1060
+[claude-4.6-opus-high] H4r1: 31s len=1972
+[claude-4.6-opus-high] H5r1: 37s len=2032
+[gpt-5.4-medium] H1r1: 283s len=1841
+[gpt-5.4-medium] H2r1: 88s len=1033
+[gpt-5.4-medium] H3r1: 58s len=1162
+[gpt-5.4-medium] H4r1: 82s len=1546
+[gpt-5.4-medium] H5r1: 147s len=1389
+[cursor-grok-4.5-medium] H1r1: 189s len=1046
+[cursor-grok-4.5-medium] H2r1: 44s len=1100
+[cursor-grok-4.5-medium] H3r1: 66s len=1644
+[cursor-grok-4.5-medium] H4r1: 61s len=2079
+[cursor-grok-4.5-medium] H5r1: 146s len=2068
+[gemini-3.5-flash] H1r1: 321s len=3979
+[gemini-3.5-flash] H2r1: 43s len=2240
+[gemini-3.5-flash] H3r1: 89s len=2553
+[gemini-3.5-flash] H4r1: 100s len=2483
+[gemini-3.5-flash] H5r1: 110s len=3871
+WHY3-DONE
+EXIT=0

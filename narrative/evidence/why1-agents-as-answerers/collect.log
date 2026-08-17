@@ -1,0 +1,104 @@
+120 runs
+[claude-4.6-opus-high] F1: 21s len=1123
+[claude-4.6-opus-high] F2: 21s len=803
+[claude-4.6-opus-high] F3: 20s len=290
+[claude-4.6-opus-high] F4: 35s len=1037
+[claude-4.6-opus-high] F5: 20s len=979
+[claude-4.6-opus-high] D1: 71s len=1106
+[claude-4.6-opus-high] D2: 63s len=764
+[claude-4.6-opus-high] D3: 26s len=1098
+[claude-4.6-opus-high] D4: 99s len=1937
+[claude-4.6-opus-high] D5: 19s len=355
+[claude-4.6-opus-high] U1: 105s len=1869
+[claude-4.6-opus-high] U2: 167s len=1717
+[claude-4.6-opus-high] U3: 13s len=588
+[claude-4.6-opus-high] U4: 116s len=683
+[claude-4.6-opus-high] U5: 12s len=626
+[claude-4.6-opus-high] N1: 63s len=3725
+[claude-4.6-opus-high] N2: 26s len=994
+[claude-4.6-opus-high] N3: 52s len=1578
+[claude-4.6-opus-high] N4: 52s len=3119
+[claude-4.6-opus-high] N5: 109s len=1921
+[gpt-5.4-medium] F1: 42s len=858
+[gpt-5.4-medium] F2: 18s len=640
+[gpt-5.4-medium] F3: 75s len=486
+[gpt-5.4-medium] F4: 39s len=522
+[gpt-5.4-medium] F5: 28s len=974
+[gpt-5.4-medium] D1: 62s len=1314
+[gpt-5.4-medium] D2: 81s len=824
+[gpt-5.4-medium] D3: 69s len=1153
+120 runs
+[claude-4.6-opus-high] F1: cached
+[claude-4.6-opus-high] F2: cached
+[claude-4.6-opus-high] F3: cached
+[claude-4.6-opus-high] F4: cached
+[claude-4.6-opus-high] F5: cached
+[claude-4.6-opus-high] D1: cached
+[claude-4.6-opus-high] D2: cached
+[claude-4.6-opus-high] D3: cached
+[claude-4.6-opus-high] D4: cached
+[claude-4.6-opus-high] D5: cached
+[claude-4.6-opus-high] U1: cached
+[claude-4.6-opus-high] U2: cached
+[claude-4.6-opus-high] U3: cached
+[claude-4.6-opus-high] U4: cached
+[claude-4.6-opus-high] U5: cached
+[claude-4.6-opus-high] N1: cached
+[claude-4.6-opus-high] N2: cached
+[claude-4.6-opus-high] N3: cached
+[claude-4.6-opus-high] N4: cached
+[claude-4.6-opus-high] N5: cached
+[gpt-5.4-medium] F1: cached
+[gpt-5.4-medium] F2: cached
+[gpt-5.4-medium] F3: cached
+[gpt-5.4-medium] F4: cached
+[gpt-5.4-medium] F5: cached
+[gpt-5.4-medium] D1: cached
+[gpt-5.4-medium] D2: cached
+[gpt-5.4-medium] D3: cached
+[gpt-5.4-medium] D4: 83s len=1457
+[gpt-5.4-medium] D5: cached
+[gpt-5.4-medium] U1: 314s len=0
+[gpt-5.4-medium] U2: 168s len=2513
+[gpt-5.4-medium] U3: cached
+[gpt-5.4-medium] U4: cached
+[gpt-5.4-medium] U5: cached
+[gpt-5.4-medium] N1: 98s len=3317
+[gpt-5.4-medium] N2: 92s len=2742
+[gpt-5.4-medium] N3: 60s len=1005
+[gpt-5.4-medium] N4: 72s len=1817
+Traceback (most recent call last):
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why1-agents-as-answerers/collect.py", line 36, in <module>
+    for qid, model, note in ex.map(lambda j: run_one(*j), jobs):
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+    yield _result_or_cancel(fs.pop())
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+    return fut.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why1-agents-as-answerers/collect.py", line 36, in <lambda>
+    for qid, model, note in ex.map(lambda j: run_one(*j), jobs):
+                                             ^^^^^^^^^^^
+  File "/home/beeps/src/github.com/bprashanth/heartwood/docs/architecture/memory/narrative/why/why1-agents-as-answerers/collect.py", line 21, in run_one
+    p = subprocess.run(["agent", "-p", qq["q"], "--model", model, "--trust", "-f", "--approve-mcps"],
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 550, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 1209, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/subprocess.py", line 2116, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+  File "/usr/lib/python3.12/subprocess.py", line 1253, in _check_timeout
+    raise TimeoutExpired(
+subprocess.TimeoutExpired: Command '['agent', '-p', 'Last quarter, how many person-days of MGNREGA work were generated in Erode district? Citation link also.', '--model', 'gpt-5.4-medium', '--trust', '-f', '--approve-mcps']' timed out after 600 seconds
+EXIT=1

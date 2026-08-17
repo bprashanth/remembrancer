@@ -1,0 +1,19 @@
+{
+  "narratives": [
+    {
+      "title": "Field notes from Insight Out",
+      "path": "field-notes/",
+      "status": "published"
+    },
+    {
+      "title": "Form data",
+      "path": "form-data/",
+      "status": "draft"
+    },
+    {
+      "title": "Form data 2",
+      "path": "form-data-deep/",
+      "status": "draft"
+    }
+  ]
+}

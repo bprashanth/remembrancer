@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<title>Form data</title>
+<style>
+:root{--bg:#fff;--ink:#000;--ink2:#000;--muted:#000;--line:#000;--card:#fff}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#fff;color:#000;font:18px/1.62 Arial,Helvetica,sans-serif}
+a{color:#000;text-underline-offset:3px}
+#content{max-width:760px;margin:0 auto;padding:58px 22px 80px}
+.entry{padding:30px 0}
+.entry + .entry{border-top:1px solid #000}
+.inner{margin:0;padding:0}
+.tag{font:12px/1.4 ui-monospace,Menlo,monospace;text-transform:uppercase;color:#000}
+h1,h2{line-height:1.15;text-wrap:balance}
+h1{font-size:clamp(34px,6vw,54px);margin:.35em 0 .45em}
+h2{font-size:clamp(27px,4vw,38px);margin:.35em 0 .6em}
+p{max-width:62ch}
+.lead{font-size:20px;color:var(--ink2)}
+ul{max-width:62ch;padding-left:1.25em}
+li{margin:.7em 0;color:var(--ink2)}
+li b{color:var(--ink)}
+.note{margin:24px 0;padding:14px 17px;background:#fff;border:1px solid #000;color:#000}
+.small{font-size:13px;color:var(--muted)}
+.home{position:fixed;top:12px;left:14px;z-index:8;color:#000;font:12px/1.3 ui-monospace,Menlo,monospace;padding:7px 9px;background:#fff}
+@media(max-width:640px){body{font-size:16px}#content{padding:50px 17px 60px}.entry{padding:24px 0}.lead{font-size:18px}.home{left:7px;top:6px}}
+</style>
+</head>
+<body>
+<a class="home" href="../">Index</a>
+
+<main id="content">
+  <section class="entry"><div class="inner">
+    <div class="tag">1 - form landscape</div>
+    <h1>What kinds of forms are we dealing with?</h1>
+    <p class="lead">We first looked at real survey forms from ODK, Kobo, SurveyCTO and other public projects. We did not want to test only on forms made by us.</p>
+    <p>Out of 29 proper survey forms:</p>
+    <ul>
+      <li><b>41% are simple registers.</b> We can handle these today.</li>
+      <li><b>Another 38% need only two more layouts:</b> one-person cards and forms with a few separate tables.</li>
+      <li><b>The last 21% are genuinely difficult.</b> They have changing option lists, tables inside tables, or depend mainly on photos and GPS.</li>
+    </ul>
+    <div class="note">So the practical picture is: 41% works now, and around 79% is within reach without new research.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">2 - making the form</div>
+    <h2>How does a paper form get made?</h2>
+    <p class="lead">There are three simple starting points.</p>
+    <ul>
+      <li><b>Make it by hand</b> in a form builder.</li>
+      <li><b>Upload a photo of an old form.</b> A larger model suggests the layout, and a person checks it.</li>
+      <li><b>Import the digital form</b> already used in Kobo, ODK or SurveyCTO. This path does not need a model.</li>
+    </ul>
+    <p>All three paths create the same template: which columns exist, what kind of value belongs in each column, and where every box is on the page.</p>
+    <p>When we print the form, we also add a QR code and small black guide marks. These tell the system which form it is looking at and where each row is.</p>
+    <div class="note">The plan is to put the structure on the paper itself, instead of asking a model to guess it later.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">3 - reading the form</div>
+    <h2>Why is a filled form hard to read?</h2>
+    <p class="lead">Reading the words is only one part. The value must also land in the correct row and column.</p>
+    <ul>
+      <li>A phone photo can be bent, tilted, dark or partly cut off.</li>
+      <li>People leave blanks, use pencil, strike out mistakes, write dots for zero and ticks for yes.</li>
+      <li>Names and local words may not be familiar to the model.</li>
+      <li>A model can read all the values correctly and still put them in the wrong cells.</li>
+    </ul>
+    <p>This is why ordinary OCR is not enough. The system has to understand the form's small writing rules, preserve empty cells, and keep every answer in position.</p>
+    <div class="note">If the photo is too poor, the system should say “please take it again”. It should not quietly make a believable but wrong spreadsheet.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">4 - what worked</div>
+    <h2>Where did we finally land?</h2>
+    <p class="lead">There are really two different problems.</p>
+    <ul>
+      <li><b>An unknown old form</b> still needs a strong frontier model and careful checking.</li>
+      <li><b>A form made or remade by us</b> has a known layout. A small local model is enough because it reads only one known row or cell at a time.</li>
+    </ul>
+    <p>For the known forms, the QR code finds the template, the guide marks find the rows, and the printed choices tell the model what answers are allowed. Unclear cells are shown to a reviewer along with the original handwriting.</p>
+    <div class="note">On forms accepted automatically, this reached about <b>94% cell accuracy</b>, around <b>0.2% hallucination</b>, and roughly <b>10 seconds per form</b> on local hardware. The data does not have to leave the organisation.</div>
+  </div></section>
+
+  <section class="entry"><div class="inner">
+    <div class="tag">5 - what next</div>
+    <h2>What can we handle, and what comes next?</h2>
+    <p class="lead">Today we can handle a normal register: a few header fields and one table with numbers, dates, yes/no, choices, names and short text.</p>
+    <p>Next, we should add:</p>
+    <ul>
+      <li><b>Card forms</b> with one person or case per page.</li>
+      <li><b>Forms with a few separate tables</b> on the same page.</li>
+      <li><b>Separate boxes for each digit</b> in amounts, dates and phone numbers.</li>
+    </ul>
+    <p>Some cases need a different paper design. Changing district/block/village lists can use forms printed for one area. Household members and their episodes can use linked sheets. Photos and GPS should remain digital.</p>
+    <div class="note">The main lesson is simple: make the form easier to detect, keep the model's job small, and send doubtful cells to a person.</div>
+    <p class="small">Source: <a href="../evidence/paperroast/">code, benchmark data and results</a></p>
+  </div></section>
+</main>
+
+</body>
+</html>

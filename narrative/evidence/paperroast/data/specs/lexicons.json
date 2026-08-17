@@ -1,0 +1,71 @@
+{
+  "person_first": [
+    "Amit", "Anita", "Arjun", "Asha", "Balaji", "Basanti", "Bhaskar", "Bhavna",
+    "Chitra", "Deepak", "Deepa", "Dinesh", "Farhana", "Ganesh", "Geeta", "Harish",
+    "Imran", "Jyoti", "Kavita", "Kiran", "Lakshmi", "Lata", "Mahesh", "Meena",
+    "Mohammed", "Nandini", "Neha", "Omar", "Padma", "Parvati", "Prakash", "Priya",
+    "Rajesh", "Ramesh", "Rekha", "Sanjay", "Savita", "Shanti", "Sita", "Suresh",
+    "Usha", "Vijay", "Yasmin", "Zoya", "Ananya", "Karthik", "Meenakshi", "Ravi",
+    "Sunita", "Venkatesh"
+  ],
+  "person_last": [
+    "Sharma", "Patel", "Singh", "Kumar", "Reddy", "Nair", "Iyer", "Das",
+    "Banerjee", "Gupta", "Joshi", "Mehta", "Khan", "Shaikh", "Yadav", "Verma",
+    "Pillai", "Rao", "Choudhary", "Mishra", "Deshmukh", "Kulkarni", "Naidu",
+    "Thakur", "Pandey", "Shetty", "Ghosh", "Bose", "Malik", "Agarwal"
+  ],
+  "villages": [
+    "Rampur", "Sitapur", "Khandala", "Bhavnagar", "Alipur", "Nandgaon",
+    "Chikmagalur", "Tenali", "Madhubani", "Karnal", "Wardha", "Palakkad",
+    "Bhilwara", "Darbhanga", "Shimoga", "Guntur", "Satara", "Jorhat",
+    "Hingoli", "Kottayam", "Barmer", "Muzaffarpur", "Hubli", "Nellore",
+    "Osmanabad", "Tezpur", "Ajmer", "Begusarai", "Tumkur", "Vizianagaram"
+  ],
+  "health_diagnosis": [
+    "fever", "ARI", "loose motions", "BP check", "cough", "cold", "body ache",
+    "skin rash", "ear pain", "eye infection", "wound", "injury", "weakness",
+    "anaemia", "diabetes check", "ANC visit", "PNC visit", "malaria", "typhoid",
+    "vomiting", "stomach pain", "chest pain", "joint pain", "UTI", "allergy",
+    "headache", "toothache", "burns", "dog bite", "snake bite", "TB follow-up",
+    "hypertension", "gastric", "dehydration"
+  ],
+  "health_remarks": [
+    "referred CHC", "counselled", "medicine given", "follow up 3 days",
+    "advised rest", "blood test advised", "ORS given", "dressing done",
+    "referred district", "ANC card updated", "vaccine deferred", "no stock",
+    "admitted observation", "family counselled", "diet advice given",
+    "return if worse"
+  ],
+  "edu_subjects": [
+    "English", "Hindi", "Maths", "Science", "Social", "Marathi", "Kannada",
+    "EVS", "Sanskrit", "Computer"
+  ],
+  "edu_remarks": [
+    "good progress", "needs help", "absent exam", "retest due", "improved",
+    "weak in maths", "left mid term", "extra class", "parent meeting",
+    "copy incomplete", "excellent work", "irregular"
+  ],
+  "shg_purpose": [
+    "goat rearing", "school fees", "kirana shop", "tailoring", "dairy",
+    "vegetable cart", "seed purchase", "medical expense", "house repair",
+    "poultry", "fishing net", "wedding", "debt repayment", "tools purchase",
+    "buffalo", "handloom", "pickle making", "cycle repair shop"
+  ],
+  "agri_crops": [
+    "paddy", "tur", "bajra", "ragi", "jowar", "maize", "soybean", "cotton",
+    "groundnut", "sesame", "moong", "urad", "chilli", "onion", "sugarcane",
+    "castor", "sunflower", "niger", "foxtail millet", "finger millet",
+    "blackgram", "greengram", "redgram", "cowpea"
+  ],
+  "agri_remarks": [
+    "pest attack", "late sowing", "good germination", "drought stress",
+    "irrigation delay", "seed shortage", "fertilizer pending", "flood damage",
+    "weed problem", "hail damage", "crop failed", "yield average",
+    "needs support", "insurance claimed"
+  ],
+  "oov": [
+    "Zynvika", "Qoratel", "Mheshwaro", "Blunjari", "Teqvaso",
+    "Dhrumika", "Pheloran", "Vajniko", "Srumathi", "Klyvento",
+    "Nabhuro", "Gwespari", "Yoltani", "Rukhvelo", "Jasmiro"
+  ]
+}

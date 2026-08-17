@@ -1,0 +1,27 @@
+[
+ {
+  "id": "X1",
+  "naive_ref": "why5 G4 (agents gave up / centroid-only)",
+  "q": "Using the Janaagraha iChangeMyCity complaints CSV on OpenCity (it has latitude and longitude columns) and the OpenStreetMap polygon for Bellandur lake, how many complaints fall within 1 km of the lake? Use haversine distance to the lake shoreline, not just the centroid. Show your working and citations."
+ },
+ {
+  "id": "X2",
+  "naive_ref": "why5 S1 (papers-only for most)",
+  "q": "Using VIIRS annual nighttime lights composites (EOG or Google Earth Engine), or failing that the SHRUG viirs annual mean tables, which parts of Erode district show the highest radiance growth from 2015 to 2023? Name the exact dataset and vintage you used. Citations."
+ },
+ {
+  "id": "X3",
+  "naive_ref": "why5 E2 (no imputation offered by most)",
+  "q": "No block-level unemployment rate exists for Anthiyur block, Erode. Impute a plausible band from the Tamil Nadu PLFS youth rates adjusted for Anthiyur's worker composition in Census 2011, state each assumption, and then specify the smallest survey that would validate the band. Citations for every input."
+ },
+ {
+  "id": "X4",
+  "naive_ref": "why2 R3 (five different figures, source lottery)",
+  "q": "For India's 2021 unemployment rate, give me all three: the ILO modelled estimate (World Bank SL.UEM.TOTL.ZS), the PLFS usual status and current weekly status figures, and the CMIE estimate. Label each with its methodology and say which one a district NGO report should use. Citations."
+ },
+ {
+  "id": "X5",
+  "naive_ref": "why5 G1 (opus asked for upload, gemini partial)",
+  "q": "From the iChangeMyCity 2019-2022 complaints CSV on OpenCity, compute the straight-line distance between the two farthest apart garbage complaints in HSR Layout ward using the latitude and longitude columns. Show the two records and the haversine calculation. Citations."
+ }
+]

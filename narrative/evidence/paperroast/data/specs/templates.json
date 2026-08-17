@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "health_immunization",
+    "title": "PHC Immunization Session Register",
+    "orientation": "portrait",
+    "rows": 18,
+    "header_fields": [
+      {"label": "PHC Name", "type": "text"},
+      {"label": "Session Date", "type": "date"},
+      {"label": "ANM Name", "type": "name"},
+      {"label": "Village", "type": "text"}
+    ],
+    "columns": [
+      {"label": "S.No", "type": "serial"},
+      {"label": "Child Name", "type": "name"},
+      {"label": "Age (Mo)", "type": "int", "min": 0, "max": 60},
+      {"label": "Sex", "type": "choice", "domain": ["M", "F"], "legend": "M=Male, F=Female"},
+      {"label": "Vaccine", "type": "choice", "domain": ["BCG", "OPV0", "PNT1", "MR"], "legend": "BCG, OPV0, PNT1=Penta1, MR=Measles"},
+      {"label": "Batch No", "type": "text"},
+      {"label": "Given", "type": "yn"},
+      {"label": "Remarks", "type": "text"}
+    ]
+  },
+  {
+    "slug": "health_opd",
+    "title": "PHC Outpatient (OPD) Register",
+    "orientation": "portrait",
+    "rows": 20,
+    "header_fields": [
+      {"label": "PHC Name", "type": "text"},
+      {"label": "Date", "type": "date"},
+      {"label": "MO Name", "type": "name"}
+    ],
+    "columns": [
+      {"label": "S.No", "type": "serial"},
+      {"label": "Patient Name", "type": "name"},
+      {"label": "Age", "type": "int", "min": 0, "max": 120},
+      {"label": "Sex", "type": "choice", "domain": ["M", "F"], "legend": "M=Male, F=Female"},
+      {"label": "Diagnosis", "type": "text"},
+      {"label": "New Case", "type": "yn"},
+      {"label": "Remarks", "type": "text"}
+    ]
+  },
+  {
+    "slug": "edu_attendance",
+    "title": "Monthly Student Attendance Register",
+    "orientation": "landscape",
+    "rows": 12,
+    "header_fields": [
+      {"label": "School Name", "type": "text"},
+      {"label": "Class", "type": "text"},
+      {"label": "Month", "type": "text"},
+      {"label": "Year", "type": "int"}
+    ],
+    "columns": [
+      {"label": "Roll No", "type": "serial"},
+      {"label": "Student Name", "type": "name"},
+      {"label": "D1", "type": "choice", "domain": ["P", "A", "L"], "legend": "P=Present, A=Absent, L=Late"},
+      {"label": "D2", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D3", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D4", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D5", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D6", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D7", "type": "choice", "domain": ["P", "A", "L"]},
+      {"label": "D8", "type": "choice", "domain": ["P", "A", "L"]}
+    ]
+  },
+  {
+    "slug": "edu_exam_marks",
+    "title": "Annual Examination Marks Register",
+    "orientation": "portrait",
+    "rows": 18,
+    "header_fields": [
+      {"label": "School Name", "type": "text"},
+      {"label": "Class", "type": "text"},
+      {"label": "Exam Year", "type": "int"},
+      {"label": "Exam Date", "type": "date"}
+    ],
+    "columns": [
+      {"label": "S.No", "type": "serial"},
+      {"label": "Student Name", "type": "name"},
+      {"label": "Subject", "type": "choice", "domain": ["ENG", "HIN", "MAT", "SCI", "SST"], "legend": "ENG HIN MAT SCI SST"},
+      {"label": "Marks", "type": "int", "min": 0, "max": 100},
+      {"label": "Grade", "type": "choice", "domain": ["A", "B", "C", "D", "E"], "legend": "A=Excellent to E=Fail"},
+      {"label": "Pass", "type": "yn"},
+      {"label": "Remarks", "type": "text"}
+    ]
+  },
+  {
+    "slug": "livelihoods_shg_ledger",
+    "title": "SHG Savings and Loan Ledger",
+    "orientation": "portrait",
+    "rows": 16,
+    "header_fields": [
+      {"label": "SHG Name", "type": "text"},
+      {"label": "Village", "type": "text"},
+      {"label": "Month", "type": "text"},
+      {"label": "Meeting Date", "type": "date"}
+    ],
+    "columns": [
+      {"label": "S.No", "type": "serial"},
+      {"label": "Member Name", "type": "name"},
+      {"label": "Job Card No", "type": "text"},
+      {"label": "Savings (Rs)", "type": "dec", "min": 0, "max": 50000},
+      {"label": "Loan (Rs)", "type": "dec", "min": 0, "max": 200000},
+      {"label": "Purpose", "type": "text"},
+      {"label": "Repaid", "type": "yn"},
+      {"label": "Balance (Rs)", "type": "dec", "min": 0, "max": 200000}
+    ]
+  },
+  {
+    "slug": "agri_kharif_survey",
+    "title": "Kharif Crop Survey Register",
+    "orientation": "portrait",
+    "rows": 16,
+    "header_fields": [
+      {"label": "Block", "type": "text"},
+      {"label": "Village", "type": "text"},
+      {"label": "Survey Year", "type": "int"},
+      {"label": "Enumerator", "type": "name"}
+    ],
+    "columns": [
+      {"label": "S.No", "type": "serial"},
+      {"label": "Farmer Name", "type": "name"},
+      {"label": "Crop", "type": "text"},
+      {"label": "Area (Acres)", "type": "dec", "min": 0, "max": 50},
+      {"label": "Irrigated", "type": "yn"},
+      {"label": "Seed (Kg)", "type": "dec", "min": 0, "max": 500},
+      {"label": "Remarks", "type": "text"}
+    ]
+  }
+]
