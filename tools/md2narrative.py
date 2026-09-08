@@ -95,12 +95,12 @@ a.ev{text-decoration:underline;text-underline-offset:3px}
 </head>
 <body>
 <a class="home" href="../">Index</a>
-<div id="content">
+<main id="content">
 <div class="tag">Field notes</div>
 <h1>%(title)s</h1>
 <p class="sub">%(sub)s</p>
 %(body)s
-</div>
+</main>
 </body>
 </html>
 """
