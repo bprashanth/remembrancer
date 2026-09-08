@@ -49,6 +49,26 @@ Imported notes live in `chronology/<source-id>/`; `_source.json` records where
 they came from. The producer still owns the work. Remembrancer keeps the small
 evidence cut needed to check the published claims.
 
+## Import a specific markdown file into html
+
+```bash
+python3 tools/md2narrative.py ../io/narrative/2026-09-07-solution-graph-checkpoint.md \
+  narrative/field-notes-pune/ \
+  --title "Field Notes from Insight Out II (Pune)" \
+  --sub "The solution graph: everything we tried before the second event."
+```
+
+Turns one producer-repo Markdown file into `narrative/<slug>/index.html` in the
+house style, with an `Index` link and an editable `main#content` region. The
+markdown stays the source of truth in the producer repo; re-run the command
+after editing it. It understands `##` headings, paragraphs, `>` quotes,
+numbered and `*` lists, links, backtick code and `_italics_`. The first `# `
+heading becomes the page subtitle unless `--sub` is given.
+
+New pages must also be added to `site.json` (status `draft` until reviewed,
+`published` to go live). Pick one editing path per page: regenerating from
+markdown overwrites any changes made with the local browser editor below.
+
 ## Edit the site locally
 
 ```bash
