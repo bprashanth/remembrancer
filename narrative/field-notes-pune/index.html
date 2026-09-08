@@ -32,15 +32,14 @@ a.ev{text-decoration:underline;text-underline-offset:3px}
 <body>
 <a class="home" href="../">Index</a>
 <main id="content">
-<section class="entry"><div class="inner"><p>Field notes</p>
-<h1>Field Notes from Insight Out II (Pune)</h1>
+<section class="entry"><div class="inner"><h1>Field Notes from Insight Out II (Pune)</h1>
 <p><strong>What this doc is:</strong> A checkpoint written 2026-09-07, before the second Insight Out, so what we learned is not lost as we start pruning branches based post the event.</p>
 <p>Between 2026-08-19 and 2026-09-02 this repo went through seven distinct "generations". Only three generations survived till event day:</p>
 <ol><li>the privacy shield (a nice to have)</li><li>the privacy filter</li><li>the blind test</li></ol>
 <p>..the latter two became "io".</p>
 <p>It is possible that other generations will contribute to future events, so this document records <em>every</em> generation - including the dead ends - because each one is a node in a graph of solutions that the event results will try and score. Sections are being filled in one at a time; a heading with (to be written) is a stub.</p>
 <h2>Where this started</h2>
-<p>For the first two Insight Out events, and the 5 frontier model benchmark that followed them, see: <a href="https://remembrancer.netlify.app/field-notes/">"field notes from insight out"</a>. That is the starting point. Those findings shaped everything below.</p>
+<p>For the first two Insight Out events, and the 5-frontier-model benchmark that followed them, see: <a href="https://remembrancer.netlify.app/field-notes/">"field notes from insight out"</a>. That is the starting point. Those findings shaped the experiments below.</p>
 <p><strong>In summary:</strong> Frontier agents' best answers are great; the problem is "the floor" and the variance between their answers. For the social sector, this could result in wasted resources (best case) or the complete exclusion of beneficiaries.</p>
 <p>The three goals set in "field notes" were:</p>
 <ol><li>patch the data holes</li><li>move the domain knowledge into the tool</li><li>make the best day the every day</li></ol>
@@ -52,14 +51,14 @@ a.ev{text-decoration:underline;text-underline-offset:3px}
 <ol><li><strong>Create a benchmark:</strong> diverse input formats, different questions, first fired at Antigravity and then at "solution X" (the competitor we would have to define). Doing this would save us months, if not years, of product time.</li><li><strong>Understand the components of Antigravity:</strong> Antigravity is really three things combined: an LLM (the thing you pick on the dropdown), a harness, and an IDE.</li><li><strong>Understand what the user base wants:</strong> they don't really need an IDE. And, as mentioned above, we assume the benchmark represents their input data formats and language, for the main goal we identified of building a dashboard.</li></ol>
 <p>Running multiple iterations of this setup we found the following:</p>
 <ol><li>Qwen 3.8 27B is good enough to continue as a serious Antigravity alternative on the benchmark.</li><li>The harness matters more than the model. The same 27B did badly in Cline's native harness and much better in DeepSeek's harness.</li><li>The harness is also going to drive costs. It controls how many calls are made to the LLM, which answers are accepted and which are rejected.</li></ol>
-<p>The other models we tried and discarded: having found the 27B, we decided to binary-search downward to close the gap. We assumed that anything larger than ~30B parameters was too big to run efficiently for, say, 20 concurrent users at the event. So our only choice was to go down. And even there, the question was practical - is there an alternative we can just hand users to run on their own laptops? Model swaps inside the same harness helped us discern:</p>
+<p><strong>The other models we tried and discarded:</strong> having found the 27B, we decided to binary-search downward to close the gap. We assumed that anything larger than ~30B parameters was too big to run efficiently for, say, 20 concurrent users at the event. So our only choice was to go down. And even there, the question was practical - is there an alternative we can just hand users to run on their own laptops? Model swaps inside the same harness helped us discern:</p>
 <ul><li>Qwen 3.5 9B couldn't produce a working page</li><li>Qwen3 14B dropped half the districts and invented a citation.</li></ul>
 <p>So: above 14B, at or below 27B.</p>
 <p><strong>The findings of Gen 0 in a nutshell:</strong></p>
 <p>The things we can do to change the core model are limited. We can run a model on a laptop. We can run one on our own server. Or we can invoke a frontier model remotely. In the first two we can fine-tune, build special-case models, and route requests - or sub-requests - to individual models. That's about it.</p>
 <p>The harness is the opposite: <em>around</em> the model we control everything. What it reads. What it is allowed to say. What runs the numbers. What checks the answer. What draws the page. What leaves the laptop. How many times it gets called. What it remembers for next time.</p>
 <p>The next two weeks were spent pulling these levers and documenting which ones moved the result.</p>
-<p>Scope: Antigravity CLI and IDE as the reference; Cline (CLI and extension) and DeepSeek (SDK and Web, with the NGO guardrail v1/v2) driving Qwen 3.8 27B; model screens of Qwen 3.5 9B and Qwen3 14B; the reasoning-effort proxy; the finding that the harness matters more than the model.</p>
+<p><strong>Footnote:</strong> Antigravity CLI and IDE as the reference; Cline (CLI and extension) and DeepSeek (SDK and Web, with the NGO guardrail v1/v2) driving Qwen 3.8 27B; model screens of Qwen 3.5 9B and Qwen3 14B; the reasoning-effort proxy; the finding that the harness matters more than the model.</p>
 <h2>Gen 1 - The split pipeline: model plans -&gt; code computes (Aug 20)</h2>
 <p>(to be written)</p>
 <p>Scope: constrained JSON plans, DuckDB as the only calculator, deterministic renderer, browser checks; GPT-OSS 20B as planner; the independent-critic track (critic-replay bank, Gemini reference, the failed self-critic ablation); the bounded Census connector; the region extractor for irregular workbooks.</p>
